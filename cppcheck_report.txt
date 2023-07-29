@@ -1,0 +1,2282 @@
+core/my_basic.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 72 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+core/my_basic.c:12325:3: warning: Assert statement calls a function which may have desired side effects: '_ls_count'. [assertWithSideEffect]
+  mb_assert(_ls_count((*s)->all_forked) == 0);
+  ^
+core/my_basic.c:12410:3: warning: Assert statement calls a function which may have desired side effects: '_ls_count'. [assertWithSideEffect]
+  mb_assert(_ls_count((*s)->all_forked) == 0);
+  ^
+core/my_basic.c:3283:14: warning: The address of local variable 'integer' might be accessed at non-zero index. [objectIndex]
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:10579:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.integer, &tmp.value.integer, sizeof(int_t));
+                      ^
+core/my_basic.c:10579:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.integer' value is lifetime=integer
+   result = mb_memcmp(&pbl->value.integer, &tmp.value.integer, sizeof(int_t));
+                      ^
+core/my_basic.c:3283:14: note: The address of local variable 'integer' might be accessed at non-zero index.
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:3283:14: warning: The address of local variable 'float_point' might be accessed at non-zero index. [objectIndex]
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:10583:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.float_point, &tmp.value.float_point, sizeof(real_t));
+                      ^
+core/my_basic.c:10583:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.float_point' value is lifetime=float_point
+   result = mb_memcmp(&pbl->value.float_point, &tmp.value.float_point, sizeof(real_t));
+                      ^
+core/my_basic.c:3283:14: note: The address of local variable 'float_point' might be accessed at non-zero index.
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:3283:14: warning: The address of local variable 'string' might be accessed at non-zero index. [objectIndex]
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:10587:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.string, &tmp.value.string, sizeof(char*));
+                      ^
+core/my_basic.c:10587:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.string' value is lifetime=string
+   result = mb_memcmp(&pbl->value.string, &tmp.value.string, sizeof(char*));
+                      ^
+core/my_basic.c:3283:14: note: The address of local variable 'string' might be accessed at non-zero index.
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:3283:14: warning: The address of local variable 'type' might be accessed at non-zero index. [objectIndex]
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:10591:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.type, &tmp.value.type, sizeof(mb_data_e));
+                      ^
+core/my_basic.c:10591:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.type' value is lifetime=type
+   result = mb_memcmp(&pbl->value.type, &tmp.value.type, sizeof(mb_data_e));
+                      ^
+core/my_basic.c:3283:14: note: The address of local variable 'type' might be accessed at non-zero index.
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:3283:14: warning: The address of local variable 'usertype_ref' might be accessed at non-zero index. [objectIndex]
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:10600:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.usertype_ref, &tmp.value.usertype_ref, sizeof(void*));
+                      ^
+core/my_basic.c:10600:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.usertype_ref' value is lifetime=usertype_ref
+   result = mb_memcmp(&pbl->value.usertype_ref, &tmp.value.usertype_ref, sizeof(void*));
+                      ^
+core/my_basic.c:3283:14: note: The address of local variable 'usertype_ref' might be accessed at non-zero index.
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:3283:14: warning: The address of local variable 'array' might be accessed at non-zero index. [objectIndex]
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:10605:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.array, &tmp.value.array, sizeof(void*));
+                      ^
+core/my_basic.c:10605:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.array' value is lifetime=array
+   result = mb_memcmp(&pbl->value.array, &tmp.value.array, sizeof(void*));
+                      ^
+core/my_basic.c:3283:14: note: The address of local variable 'array' might be accessed at non-zero index.
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:3283:14: warning: The address of local variable 'list' might be accessed at non-zero index. [objectIndex]
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:10610:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.list, &tmp.value.list, sizeof(void*));
+                      ^
+core/my_basic.c:10610:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.list' value is lifetime=list
+   result = mb_memcmp(&pbl->value.list, &tmp.value.list, sizeof(void*));
+                      ^
+core/my_basic.c:3283:14: note: The address of local variable 'list' might be accessed at non-zero index.
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:3283:14: warning: The address of local variable 'list_it' might be accessed at non-zero index. [objectIndex]
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:10614:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.list_it, &tmp.value.list_it, sizeof(void*));
+                      ^
+core/my_basic.c:10614:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.list_it' value is lifetime=list_it
+   result = mb_memcmp(&pbl->value.list_it, &tmp.value.list_it, sizeof(void*));
+                      ^
+core/my_basic.c:3283:14: note: The address of local variable 'list_it' might be accessed at non-zero index.
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:3283:14: warning: The address of local variable 'dict' might be accessed at non-zero index. [objectIndex]
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:10618:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.dict, &tmp.value.dict, sizeof(void*));
+                      ^
+core/my_basic.c:10618:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.dict' value is lifetime=dict
+   result = mb_memcmp(&pbl->value.dict, &tmp.value.dict, sizeof(void*));
+                      ^
+core/my_basic.c:3283:14: note: The address of local variable 'dict' might be accessed at non-zero index.
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:3288:9: warning: The address of local variable 'integer' might be accessed at non-zero index. [objectIndex]
+   if(lc[i] < rc[i])
+        ^
+core/my_basic.c:10579:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.integer, &tmp.value.integer, sizeof(int_t));
+                      ^
+core/my_basic.c:10579:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.integer' value is lifetime=integer
+   result = mb_memcmp(&pbl->value.integer, &tmp.value.integer, sizeof(int_t));
+                      ^
+core/my_basic.c:3288:9: note: The address of local variable 'integer' might be accessed at non-zero index.
+   if(lc[i] < rc[i])
+        ^
+core/my_basic.c:3288:9: warning: The address of local variable 'float_point' might be accessed at non-zero index. [objectIndex]
+   if(lc[i] < rc[i])
+        ^
+core/my_basic.c:10583:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.float_point, &tmp.value.float_point, sizeof(real_t));
+                      ^
+core/my_basic.c:10583:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.float_point' value is lifetime=float_point
+   result = mb_memcmp(&pbl->value.float_point, &tmp.value.float_point, sizeof(real_t));
+                      ^
+core/my_basic.c:3288:9: note: The address of local variable 'float_point' might be accessed at non-zero index.
+   if(lc[i] < rc[i])
+        ^
+core/my_basic.c:3288:9: warning: The address of local variable 'string' might be accessed at non-zero index. [objectIndex]
+   if(lc[i] < rc[i])
+        ^
+core/my_basic.c:10587:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.string, &tmp.value.string, sizeof(char*));
+                      ^
+core/my_basic.c:10587:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.string' value is lifetime=string
+   result = mb_memcmp(&pbl->value.string, &tmp.value.string, sizeof(char*));
+                      ^
+core/my_basic.c:3288:9: note: The address of local variable 'string' might be accessed at non-zero index.
+   if(lc[i] < rc[i])
+        ^
+core/my_basic.c:3288:9: warning: The address of local variable 'type' might be accessed at non-zero index. [objectIndex]
+   if(lc[i] < rc[i])
+        ^
+core/my_basic.c:10591:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.type, &tmp.value.type, sizeof(mb_data_e));
+                      ^
+core/my_basic.c:10591:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.type' value is lifetime=type
+   result = mb_memcmp(&pbl->value.type, &tmp.value.type, sizeof(mb_data_e));
+                      ^
+core/my_basic.c:3288:9: note: The address of local variable 'type' might be accessed at non-zero index.
+   if(lc[i] < rc[i])
+        ^
+core/my_basic.c:3288:9: warning: The address of local variable 'usertype_ref' might be accessed at non-zero index. [objectIndex]
+   if(lc[i] < rc[i])
+        ^
+core/my_basic.c:10600:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.usertype_ref, &tmp.value.usertype_ref, sizeof(void*));
+                      ^
+core/my_basic.c:10600:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.usertype_ref' value is lifetime=usertype_ref
+   result = mb_memcmp(&pbl->value.usertype_ref, &tmp.value.usertype_ref, sizeof(void*));
+                      ^
+core/my_basic.c:3288:9: note: The address of local variable 'usertype_ref' might be accessed at non-zero index.
+   if(lc[i] < rc[i])
+        ^
+core/my_basic.c:3288:9: warning: The address of local variable 'array' might be accessed at non-zero index. [objectIndex]
+   if(lc[i] < rc[i])
+        ^
+core/my_basic.c:10605:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.array, &tmp.value.array, sizeof(void*));
+                      ^
+core/my_basic.c:10605:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.array' value is lifetime=array
+   result = mb_memcmp(&pbl->value.array, &tmp.value.array, sizeof(void*));
+                      ^
+core/my_basic.c:3288:9: note: The address of local variable 'array' might be accessed at non-zero index.
+   if(lc[i] < rc[i])
+        ^
+core/my_basic.c:3288:9: warning: The address of local variable 'list' might be accessed at non-zero index. [objectIndex]
+   if(lc[i] < rc[i])
+        ^
+core/my_basic.c:10610:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.list, &tmp.value.list, sizeof(void*));
+                      ^
+core/my_basic.c:10610:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.list' value is lifetime=list
+   result = mb_memcmp(&pbl->value.list, &tmp.value.list, sizeof(void*));
+                      ^
+core/my_basic.c:3288:9: note: The address of local variable 'list' might be accessed at non-zero index.
+   if(lc[i] < rc[i])
+        ^
+core/my_basic.c:3288:9: warning: The address of local variable 'list_it' might be accessed at non-zero index. [objectIndex]
+   if(lc[i] < rc[i])
+        ^
+core/my_basic.c:10614:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.list_it, &tmp.value.list_it, sizeof(void*));
+                      ^
+core/my_basic.c:10614:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.list_it' value is lifetime=list_it
+   result = mb_memcmp(&pbl->value.list_it, &tmp.value.list_it, sizeof(void*));
+                      ^
+core/my_basic.c:3288:9: note: The address of local variable 'list_it' might be accessed at non-zero index.
+   if(lc[i] < rc[i])
+        ^
+core/my_basic.c:3288:9: warning: The address of local variable 'dict' might be accessed at non-zero index. [objectIndex]
+   if(lc[i] < rc[i])
+        ^
+core/my_basic.c:10618:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.dict, &tmp.value.dict, sizeof(void*));
+                      ^
+core/my_basic.c:10618:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.dict' value is lifetime=dict
+   result = mb_memcmp(&pbl->value.dict, &tmp.value.dict, sizeof(void*));
+                      ^
+core/my_basic.c:3288:9: note: The address of local variable 'dict' might be accessed at non-zero index.
+   if(lc[i] < rc[i])
+        ^
+core/my_basic.c:3290:14: warning: The address of local variable 'integer' might be accessed at non-zero index. [objectIndex]
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:10579:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.integer, &tmp.value.integer, sizeof(int_t));
+                      ^
+core/my_basic.c:10579:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.integer' value is lifetime=integer
+   result = mb_memcmp(&pbl->value.integer, &tmp.value.integer, sizeof(int_t));
+                      ^
+core/my_basic.c:3290:14: note: The address of local variable 'integer' might be accessed at non-zero index.
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:3290:14: warning: The address of local variable 'float_point' might be accessed at non-zero index. [objectIndex]
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:10583:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.float_point, &tmp.value.float_point, sizeof(real_t));
+                      ^
+core/my_basic.c:10583:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.float_point' value is lifetime=float_point
+   result = mb_memcmp(&pbl->value.float_point, &tmp.value.float_point, sizeof(real_t));
+                      ^
+core/my_basic.c:3290:14: note: The address of local variable 'float_point' might be accessed at non-zero index.
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:3290:14: warning: The address of local variable 'string' might be accessed at non-zero index. [objectIndex]
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:10587:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.string, &tmp.value.string, sizeof(char*));
+                      ^
+core/my_basic.c:10587:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.string' value is lifetime=string
+   result = mb_memcmp(&pbl->value.string, &tmp.value.string, sizeof(char*));
+                      ^
+core/my_basic.c:3290:14: note: The address of local variable 'string' might be accessed at non-zero index.
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:3290:14: warning: The address of local variable 'type' might be accessed at non-zero index. [objectIndex]
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:10591:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.type, &tmp.value.type, sizeof(mb_data_e));
+                      ^
+core/my_basic.c:10591:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.type' value is lifetime=type
+   result = mb_memcmp(&pbl->value.type, &tmp.value.type, sizeof(mb_data_e));
+                      ^
+core/my_basic.c:3290:14: note: The address of local variable 'type' might be accessed at non-zero index.
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:3290:14: warning: The address of local variable 'usertype_ref' might be accessed at non-zero index. [objectIndex]
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:10600:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.usertype_ref, &tmp.value.usertype_ref, sizeof(void*));
+                      ^
+core/my_basic.c:10600:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.usertype_ref' value is lifetime=usertype_ref
+   result = mb_memcmp(&pbl->value.usertype_ref, &tmp.value.usertype_ref, sizeof(void*));
+                      ^
+core/my_basic.c:3290:14: note: The address of local variable 'usertype_ref' might be accessed at non-zero index.
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:3290:14: warning: The address of local variable 'array' might be accessed at non-zero index. [objectIndex]
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:10605:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.array, &tmp.value.array, sizeof(void*));
+                      ^
+core/my_basic.c:10605:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.array' value is lifetime=array
+   result = mb_memcmp(&pbl->value.array, &tmp.value.array, sizeof(void*));
+                      ^
+core/my_basic.c:3290:14: note: The address of local variable 'array' might be accessed at non-zero index.
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:3290:14: warning: The address of local variable 'list' might be accessed at non-zero index. [objectIndex]
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:10610:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.list, &tmp.value.list, sizeof(void*));
+                      ^
+core/my_basic.c:10610:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.list' value is lifetime=list
+   result = mb_memcmp(&pbl->value.list, &tmp.value.list, sizeof(void*));
+                      ^
+core/my_basic.c:3290:14: note: The address of local variable 'list' might be accessed at non-zero index.
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:3290:14: warning: The address of local variable 'list_it' might be accessed at non-zero index. [objectIndex]
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:10614:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.list_it, &tmp.value.list_it, sizeof(void*));
+                      ^
+core/my_basic.c:10614:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.list_it' value is lifetime=list_it
+   result = mb_memcmp(&pbl->value.list_it, &tmp.value.list_it, sizeof(void*));
+                      ^
+core/my_basic.c:3290:14: note: The address of local variable 'list_it' might be accessed at non-zero index.
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:3290:14: warning: The address of local variable 'dict' might be accessed at non-zero index. [objectIndex]
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:10618:23: note: Address of variable taken here.
+   result = mb_memcmp(&pbl->value.dict, &tmp.value.dict, sizeof(void*));
+                      ^
+core/my_basic.c:10618:23: note: Calling function 'mb_memcmp', 1st argument '&pbl->value.dict' value is lifetime=dict
+   result = mb_memcmp(&pbl->value.dict, &tmp.value.dict, sizeof(void*));
+                      ^
+core/my_basic.c:3290:14: note: The address of local variable 'dict' might be accessed at non-zero index.
+   else if(lc[i] > rc[i])
+             ^
+core/my_basic.c:4361:27: style: Redundant condition: has_arg. '!has_arg || (has_arg && has_arg(s,(void**)l,va,ca,&ia,r))' is equivalent to '!has_arg || has_arg(s,(void**)l,va,ca,&ia,r)' [redundantCondition]
+  while(pars && (!has_arg || (has_arg && has_arg(s, (void**)l, va, ca, &ia, r)))) {
+                          ^
+core/my_basic.c:5757:27: style: Redundant condition: context->last_symbol. '!A || (A && B)' is equivalent to '!A || B' [redundantCondition]
+ if(!context->last_symbol ||
+                          ^
+core/my_basic.c:5831:28: style: Redundant condition: context->last_symbol. '!A || (A && B)' is equivalent to '!A || B' [redundantCondition]
+  if(!context->last_symbol || _IS_EOS(context->last_symbol)) {
+                           ^
+core/my_basic.c:7691:20: warning: Logical disjunction always evaluates to true: !(it->curr_node) || it->curr_node == (_ls_node_t*)(intptr_t)~0. [incorrectLogicOperator]
+ if(!it->curr_node || it->curr_node == _INVALID_DICT_IT) {
+                   ^
+core/my_basic.c:13002:52: style: Redundant condition: inep. '!inep || (inep && !(*inep))' is equivalent to '!inep || !(*inep)' [redundantCondition]
+ if(s->no_eat_comma_mark < _NO_EAT_COMMA && (!inep || (inep && !(*inep)))) {
+                                                   ^
+core/my_basic.c:18549:10: style: Redundant condition: obj. '!obj || (obj && ((_object_t*)(obj))->type==_DT_EOS)' is equivalent to '!obj || ((_object_t*)(obj))->type==_DT_EOS' [redundantCondition]
+ if(!obj || _IS_EOS(obj)) {
+         ^
+core/my_basic.c:2651:8: style: Condition 'is_circular' is always false [knownConditionTrueFalse]
+    if(is_circular)
+       ^
+core/my_basic.c:2622:23: note: Assignment 'is_circular=0', assigned value is 0
+ bool_t is_circular = false, is_double = true;
+                      ^
+core/my_basic.c:2632:5: note: Assuming condition is false
+ if(!lst)
+    ^
+core/my_basic.c:2651:8: note: Condition 'is_circular' is always false
+    if(is_circular)
+       ^
+core/my_basic.c:2687:6: style: Condition 'is_circular' is always false [knownConditionTrueFalse]
+  if(is_circular) {
+     ^
+core/my_basic.c:2622:23: note: Assignment 'is_circular=0', assigned value is 0
+ bool_t is_circular = false, is_double = true;
+                      ^
+core/my_basic.c:2632:5: note: Assuming condition is false
+ if(!lst)
+    ^
+core/my_basic.c:2687:6: note: Condition 'is_circular' is always false
+  if(is_circular) {
+     ^
+core/my_basic.c:4082:20: style: Condition 'ast' is always true [knownConditionTrueFalse]
+         if(ast && ast && _IS_FUNC(ast->data, _core_open_bracket)) {
+                   ^
+core/my_basic.c:4082:13: note: Assuming that condition 'ast' is not redundant
+         if(ast && ast && _IS_FUNC(ast->data, _core_open_bracket)) {
+            ^
+core/my_basic.c:4082:20: note: Condition 'ast' is always true
+         if(ast && ast && _IS_FUNC(ast->data, _core_open_bracket)) {
+                   ^
+core/my_basic.c:4157:10: style: Condition 'ast' is always true [knownConditionTrueFalse]
+     c = ast ? (_object_t*)ast->data : 0;
+         ^
+core/my_basic.c:4156:8: note: Assuming that condition 'ast' is not redundant
+    if(ast && (running->calc_depth == _INFINITY_CALC_DEPTH || running->calc_depth)) {
+       ^
+core/my_basic.c:4157:10: note: Condition 'ast' is always true
+     c = ast ? (_object_t*)ast->data : 0;
+         ^
+core/my_basic.c:4403:18: style: Condition '!var_args' is always true [knownConditionTrueFalse]
+   if(has_arg && !var_args && _IS_VAR_ARGS(var))
+                 ^
+core/my_basic.c:4349:25: note: Assignment 'var_args=0', assigned value is 0
+ _ls_node_t* var_args = 0;
+                        ^
+core/my_basic.c:4403:18: note: Condition '!var_args' is always true
+   if(has_arg && !var_args && _IS_VAR_ARGS(var))
+                 ^
+core/my_basic.c:4428:8: style: Condition 'ast' is always true [knownConditionTrueFalse]
+    if(ast) ast = ast->next;
+       ^
+core/my_basic.c:4425:6: note: Assuming that condition 'ast' is not redundant
+  if(ast) {
+     ^
+core/my_basic.c:4428:8: note: Condition 'ast' is always true
+    if(ast) ast = ast->next;
+       ^
+core/my_basic.c:7881:13: style: Condition 'index>=head' is always true [knownConditionTrueFalse]
+   if(index >= head && index < left) { /* [HEAD, LEFT) */
+            ^
+core/my_basic.c:7871:11: note: Assuming that condition 'index>=0' is not redundant
+ if(index >= 0 && index < (int)coll->count) {
+          ^
+core/my_basic.c:7881:13: note: Condition 'index>=head' is always true
+   if(index >= head && index < left) { /* [HEAD, LEFT) */
+            ^
+core/my_basic.c:11211:13: style: Condition 'obj' is always true [knownConditionTrueFalse]
+  } else if(obj && _IS_FUNC(obj, _core_close_bracket) && s->last_routine && s->last_routine->type == MB_RT_LAMBDA) {
+            ^
+core/my_basic.c:11184:6: note: Assuming that condition '!obj' is not redundant
+  if(!obj) {
+     ^
+core/my_basic.c:11211:13: note: Condition 'obj' is always true
+  } else if(obj && _IS_FUNC(obj, _core_close_bracket) && s->last_routine && s->last_routine->type == MB_RT_LAMBDA) {
+            ^
+core/my_basic.c:11214:13: style: Condition 'obj' is always true [knownConditionTrueFalse]
+  } else if(obj && obj->type == _DT_FUNC && (_is_operator(obj->data.func->pointer) || _is_flow(obj->data.func->pointer))) {
+            ^
+core/my_basic.c:11184:6: note: Assuming that condition '!obj' is not redundant
+  if(!obj) {
+     ^
+core/my_basic.c:11214:13: note: Condition 'obj' is always true
+  } else if(obj && obj->type == _DT_FUNC && (_is_operator(obj->data.func->pointer) || _is_flow(obj->data.func->pointer))) {
+            ^
+core/my_basic.c:11216:13: style: Condition 'obj' is always true [knownConditionTrueFalse]
+  } else if(obj && obj->type == _DT_FUNC) {
+            ^
+core/my_basic.c:11184:6: note: Assuming that condition '!obj' is not redundant
+  if(!obj) {
+     ^
+core/my_basic.c:11216:13: note: Condition 'obj' is always true
+  } else if(obj && obj->type == _DT_FUNC) {
+            ^
+core/my_basic.c:11218:13: style: Condition 'obj' is always true [knownConditionTrueFalse]
+  } else if(obj && obj->type != _DT_FUNC) {
+            ^
+core/my_basic.c:11184:6: note: Assuming that condition '!obj' is not redundant
+  if(!obj) {
+     ^
+core/my_basic.c:11218:13: note: Condition 'obj' is always true
+  } else if(obj && obj->type != _DT_FUNC) {
+            ^
+core/my_basic.c:13234:5: style: Condition 's' is always true [knownConditionTrueFalse]
+ if(s && s->last_instance) {
+    ^
+core/my_basic.c:13228:5: note: Assuming that condition '!s' is not redundant
+ if(!s || !d) {
+    ^
+core/my_basic.c:13234:5: note: Condition 's' is always true
+ if(s && s->last_instance) {
+    ^
+core/my_basic.c:13235:6: style: Condition 'd' is always true [knownConditionTrueFalse]
+  if(d)
+     ^
+core/my_basic.c:13228:11: note: Assuming that condition '!d' is not redundant
+ if(!s || !d) {
+          ^
+core/my_basic.c:13235:6: note: Condition 'd' is always true
+  if(d)
+     ^
+core/my_basic.c:13237:12: style: Condition 's' is always true [knownConditionTrueFalse]
+ } else if(s && s->last_routine && s->last_routine->instance) {
+           ^
+core/my_basic.c:13228:5: note: Assuming that condition '!s' is not redundant
+ if(!s || !d) {
+    ^
+core/my_basic.c:13237:12: note: Condition 's' is always true
+ } else if(s && s->last_routine && s->last_routine->instance) {
+           ^
+core/my_basic.c:13238:6: style: Condition 'd' is always true [knownConditionTrueFalse]
+  if(d)
+     ^
+core/my_basic.c:13228:11: note: Assuming that condition '!d' is not redundant
+ if(!s || !d) {
+          ^
+core/my_basic.c:13238:6: note: Condition 'd' is always true
+  if(d)
+     ^
+core/my_basic.c:13241:6: style: Condition 'd' is always true [knownConditionTrueFalse]
+  if(d) *d = 0;
+     ^
+core/my_basic.c:13228:11: note: Assuming that condition '!d' is not redundant
+ if(!s || !d) {
+          ^
+core/my_basic.c:13241:6: note: Condition 'd' is always true
+  if(d) *d = 0;
+     ^
+core/my_basic.c:13268:5: style: Condition 's' is always true [knownConditionTrueFalse]
+ if(s && s->last_instance) {
+    ^
+core/my_basic.c:13262:5: note: Assuming that condition '!s' is not redundant
+ if(!s || !d) {
+    ^
+core/my_basic.c:13268:5: note: Condition 's' is always true
+ if(s && s->last_instance) {
+    ^
+core/my_basic.c:13937:5: style: Condition 'out' is always true [knownConditionTrueFalse]
+ if(out) {
+    ^
+core/my_basic.c:13931:11: note: Assuming that condition '!out' is not redundant
+ if(!s || !out) {
+          ^
+core/my_basic.c:13937:5: note: Condition 'out' is always true
+ if(out) {
+    ^
+core/my_basic.c:14949:5: style: Condition 's' is always true [knownConditionTrueFalse]
+ if(s && d)
+    ^
+core/my_basic.c:14943:5: note: Assuming that condition '!s' is not redundant
+ if(!s || !d) {
+    ^
+core/my_basic.c:14949:5: note: Condition 's' is always true
+ if(s && d)
+    ^
+core/my_basic.c:14949:10: style: Condition 'd' is always true [knownConditionTrueFalse]
+ if(s && d)
+         ^
+core/my_basic.c:14943:11: note: Assuming that condition '!d' is not redundant
+ if(!s || !d) {
+          ^
+core/my_basic.c:14949:10: note: Condition 'd' is always true
+ if(s && d)
+         ^
+core/my_basic.c:14966:5: style: Condition 's' is always true [knownConditionTrueFalse]
+ if(s)
+    ^
+core/my_basic.c:14960:5: note: Assuming that condition '!s' is not redundant
+ if(!s) {
+    ^
+core/my_basic.c:14966:5: note: Condition 's' is always true
+ if(s)
+    ^
+core/my_basic.c:15977:6: style: Condition 'ast' is always true [knownConditionTrueFalse]
+  if(ast && ast->next && _IS_EOS(ast->next->data)) {
+     ^
+core/my_basic.c:15911:5: note: Assuming that condition '!ast' is not redundant
+ if(!ast)
+    ^
+core/my_basic.c:15977:6: note: Condition 'ast' is always true
+  if(ast && ast->next && _IS_EOS(ast->next->data)) {
+     ^
+core/my_basic.c:17075:6: style: Condition 'ast' is always true [knownConditionTrueFalse]
+  if(ast && !_is_valid_lambda_body_node(s, &routine->func.lambda, (_object_t*)ast->data)) {
+     ^
+core/my_basic.c:17069:8: note: Assuming that condition 'ast' is not redundant
+ while(ast && (brackets || !_IS_FUNC(ast->data, _core_close_bracket))) {
+       ^
+core/my_basic.c:17075:6: note: Condition 'ast' is always true
+  if(ast && !_is_valid_lambda_body_node(s, &routine->func.lambda, (_object_t*)ast->data)) {
+     ^
+core/my_basic.c:2692:4: warning: Possible null pointer dereference: tail [nullPointer]
+   tail->next = 0;
+   ^
+core/my_basic.c:2641:10: note: Assignment 'tail=0', assigned value is 0
+  tail = 0;
+         ^
+core/my_basic.c:2692:4: note: Null pointer dereference
+   tail->next = 0;
+   ^
+core/my_basic.c:3053:14: warning: Either the condition 'ht' is redundant or there is possible null pointer dereference: ht. [nullPointerRedundantCheck]
+ hash_code = ht->hash(ht, key);
+             ^
+core/my_basic.c:8613:2: note: Assuming that condition 'ht' is not redundant
+ mb_assert(meta && ht);
+ ^
+core/my_basic.c:8610:23: note: Assignment 'htable=(struct _ht_node_t*)ht', assigned value is 0
+ _ht_node_t* htable = (_ht_node_t*)ht;
+                      ^
+core/my_basic.c:8615:15: note: Calling function '_ht_find', 1st argument 'htable' value is 0
+ if(!_ht_find(htable, &meta->ref))
+              ^
+core/my_basic.c:3053:14: note: Null pointer dereference
+ hash_code = ht->hash(ht, key);
+             ^
+core/my_basic.c:3054:5: warning:inconclusive: Either the condition 'ht' is redundant or there is possible null pointer dereference: ht. [nullPointerRedundantCheck]
+ if(ht->array && ht->array[hash_code]) {
+    ^
+core/my_basic.c:8613:2: note: Assuming that condition 'ht' is not redundant
+ mb_assert(meta && ht);
+ ^
+core/my_basic.c:8610:23: note: Assignment 'htable=(struct _ht_node_t*)ht', assigned value is 0
+ _ht_node_t* htable = (_ht_node_t*)ht;
+                      ^
+core/my_basic.c:8615:15: note: Calling function '_ht_find', 1st argument 'htable' value is 0
+ if(!_ht_find(htable, &meta->ref))
+              ^
+core/my_basic.c:3054:5: note: Null pointer dereference
+ if(ht->array && ht->array[hash_code]) {
+    ^
+core/my_basic.c:3383:16: warning: Either the condition '!ptr' is redundant or there is possible null pointer dereference: ptr. [nullPointerRedundantCheck]
+ if(!ptr && !(*ptr))
+               ^
+core/my_basic.c:3383:5: note: Assuming that condition '!ptr' is not redundant
+ if(!ptr && !(*ptr))
+    ^
+core/my_basic.c:3380:15: note: Assignment to 'ptr=(char**)ch'
+ char** ptr = (char**)ch;
+              ^
+core/my_basic.c:3383:16: note: Null pointer dereference
+ if(!ptr && !(*ptr))
+               ^
+core/my_basic.c:3786:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_INVALID_EXPRESSION, s->source_file, DON(ast), MB_FUNC_ERR, _error, result);
+  ^
+core/my_basic.c:3882:13: warning: Either the condition 'ast' is redundant or there is possible null pointer dereference: ast. [nullPointerRedundantCheck]
+      ast = ast->prev;
+            ^
+core/my_basic.c:3874:9: note: Assuming that condition 'ast' is not redundant
+     if(ast && !_IS_FUNC(((_object_t*)ast->data), _core_open_bracket)) {
+        ^
+core/my_basic.c:3882:13: note: Null pointer dereference
+      ast = ast->prev;
+            ^
+core/my_basic.c:3885:8: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+       _handle_error_on_obj(s, SE_RN_CALCULATION_ERROR, s->source_file, DON(ast), MB_FUNC_ERR, _error, result);
+       ^
+core/my_basic.c:3896:8: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+       _handle_error_on_obj(s, SE_RN_OPERATOR_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _error, result);
+       ^
+core/my_basic.c:3924:7: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+      _handle_error_on_obj(s, SE_RN_CALCULATION_ERROR, s->source_file, DON(ast), MB_FUNC_ERR, _error, result);
+      ^
+core/my_basic.c:3944:7: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+      _handle_error_on_obj(s, SE_RN_OPERATOR_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _error, result);
+      ^
+core/my_basic.c:3950:8: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+       _handle_error_on_obj(s, SE_RN_SYNTAX_ERROR, s->source_file, DON(ast), MB_FUNC_ERR, _error, result);
+       ^
+core/my_basic.c:3994:7: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+      _handle_error_on_obj(s, SE_RN_CALCULATION_ERROR, s->source_file, DON(ast), MB_FUNC_ERR, _error, result);
+      ^
+core/my_basic.c:4003:7: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+      _handle_error_on_obj(s, SE_RN_OPERATOR_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _error, result);
+      ^
+core/my_basic.c:4018:13: warning: Either the condition 'ast' is redundant or there is possible null pointer dereference: ast. [nullPointerRedundantCheck]
+      ast = ast->prev;
+            ^
+core/my_basic.c:4013:9: note: Assuming that condition 'ast' is not redundant
+     if(ast && !_IS_FUNC(((_object_t*)ast->data), _core_open_bracket)) {
+        ^
+core/my_basic.c:4018:13: note: Null pointer dereference
+      ast = ast->prev;
+            ^
+core/my_basic.c:4021:8: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+       _handle_error_on_obj(s, SE_RN_CALCULATION_ERROR, s->source_file, DON(ast), MB_FUNC_ERR, _error, result);
+       ^
+core/my_basic.c:4046:8: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+       _handle_error_on_obj(s, SE_RN_OPERATOR_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _error, result);
+       ^
+core/my_basic.c:4143:10: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+         _handle_error_on_obj(s, SE_RN_INVALID_ID_USAGE, s->source_file, DON(ast), MB_FUNC_ERR, _error, result);
+         ^
+core/my_basic.c:4149:7: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+      _handle_error_on_obj(s, SE_RN_OPERATOR_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _error, result);
+      ^
+core/my_basic.c:4158:9: warning: Possible null pointer dereference: c [nullPointer]
+     if(c->type == _DT_FUNC && !_is_operator(c->data.func->pointer) && !_is_flow(c->data.func->pointer)) {
+        ^
+core/my_basic.c:4157:14: note: Assignment 'c=ast?(struct _object_t*)ast->data:0', assigned value is 0
+     c = ast ? (_object_t*)ast->data : 0;
+             ^
+core/my_basic.c:4158:9: note: Null pointer dereference
+     if(c->type == _DT_FUNC && !_is_operator(c->data.func->pointer) && !_is_flow(c->data.func->pointer)) {
+        ^
+core/my_basic.c:4161:7: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+      _handle_error_on_obj(s, SE_RN_COLON_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _error, result);
+      ^
+core/my_basic.c:4209:3: warning: Possible null pointer dereference: (errn)?((_object_t*)(errn->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_CLOSE_BRACKET_EXPECTED, s->source_file, DON(errn), MB_FUNC_ERR, _error, result);
+  ^
+core/my_basic.c:4214:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_UNEXPECTED_TYPE, s->source_file, DON(ast), MB_FUNC_ERR, _error, result);
+  ^
+core/my_basic.c:4507:21: warning: Either the condition 's' is redundant or there is possible null pointer dereference: s. [nullPointerRedundantCheck]
+ bool_t same_inst = s->last_routine ? s->last_routine->instance == r->instance : false;
+                    ^
+core/my_basic.c:4512:2: note: Assuming that condition 's' is not redundant
+ mb_assert(s && l && r);
+ ^
+core/my_basic.c:4507:21: note: Null pointer dereference
+ bool_t same_inst = s->last_routine ? s->last_routine->instance == r->instance : false;
+                    ^
+core/my_basic.c:4572:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_INVALID_ROUTINE, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:4688:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_INVALID_ROUTINE, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:6483:6: warning: Either the condition 'gc' is redundant or there is possible null pointer dereference: gc. [nullPointerRedundantCheck]
+ if(!gc->table)
+     ^
+core/my_basic.c:6480:5: note: Assuming that condition 'gc' is not redundant
+ if(gc && _ht_find(gc->collected_table, ref))
+    ^
+core/my_basic.c:6483:6: note: Null pointer dereference
+ if(!gc->table)
+     ^
+core/my_basic.c:6728:3: warning: Either the condition 'obj' is redundant or there is possible null pointer dereference: obj. [nullPointerRedundantCheck]
+  _ADDGC(obj, gc, true)
+  ^
+core/my_basic.c:6723:5: note: Assuming that condition 'obj' is not redundant
+ if(_IS_VAR(obj)) {
+    ^
+core/my_basic.c:6728:3: note: Null pointer dereference
+  _ADDGC(obj, gc, true)
+  ^
+core/my_basic.c:6759:3: warning: Either the condition 'obj' is redundant or there is possible null pointer dereference: obj. [nullPointerRedundantCheck]
+  _ADDGC(obj, gc, false)
+  ^
+core/my_basic.c:6746:5: note: Assuming that condition 'obj' is not redundant
+ if(_IS_VAR(obj)) {
+    ^
+core/my_basic.c:6759:3: note: Null pointer dereference
+  _ADDGC(obj, gc, false)
+  ^
+core/my_basic.c:7291:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_INVALID_ID_USAGE, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:7313:6: warning:inconclusive: Either the condition 'ast->next' is redundant or there is possible null pointer dereference: ast. [nullPointerRedundantCheck]
+ if(!ast->next) {
+     ^
+core/my_basic.c:7298:21: note: Assuming that condition 'ast->next' is not redundant
+ if(literally && ast->next && _IS_FUNC((_object_t*)ast->next->data, _core_equal)) {
+                    ^
+core/my_basic.c:7311:11: note: Assignment 'ast=ast->next', assigned value is 0
+ ast = ast->next;
+          ^
+core/my_basic.c:7313:6: note: Null pointer dereference
+ if(!ast->next) {
+     ^
+core/my_basic.c:7314:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_INVALID_ID_USAGE, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:7324:4: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+   _handle_error_on_obj(s, SE_RN_UNEXPECTED_TYPE, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+   ^
+core/my_basic.c:7327:4: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+   _handle_error_on_obj(s, SE_RN_INDEX_OUT_OF_BOUND, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+   ^
+core/my_basic.c:7330:4: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+   _handle_error_on_obj(s, SE_RN_TOO_MANY_DIMENSIONS, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+   ^
+core/my_basic.c:7333:4: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+   _handle_error_on_obj(s, SE_RN_INDEX_OUT_OF_BOUND, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+   ^
+core/my_basic.c:7345:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_RANK_OUT_OF_BOUND, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:7412:5: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+    _handle_error_on_obj(s, SE_RN_STRING_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+    ^
+core/my_basic.c:8433:14: warning: Either the condition 'n' is redundant or there is possible null pointer dereference: derived. [nullPointerRedundantCheck]
+ if(_ls_find(derived->meta_list, base, (_ls_compare_t)_ht_cmp_intptr, 0)) {
+             ^
+core/my_basic.c:8538:2: note: Assuming that condition 'n' is not redundant
+ mb_assert(meta && n);
+ ^
+core/my_basic.c:8535:23: note: Assignment 'instance=(struct _class_t*)n', assigned value is 0
+ _class_t* instance = (_class_t*)n;
+                      ^
+core/my_basic.c:8540:36: note: Calling function '_link_meta_class', 2nd argument 'instance' value is 0
+ _link_meta_class(instance->ref.s, instance, meta);
+                                   ^
+core/my_basic.c:8433:14: note: Null pointer dereference
+ if(_ls_find(derived->meta_list, base, (_ls_compare_t)_ht_cmp_intptr, 0)) {
+             ^
+core/my_basic.c:8540:19: warning: Either the condition 'n' is redundant or there is possible null pointer dereference: instance. [nullPointerRedundantCheck]
+ _link_meta_class(instance->ref.s, instance, meta);
+                  ^
+core/my_basic.c:8538:2: note: Assuming that condition 'n' is not redundant
+ mb_assert(meta && n);
+ ^
+core/my_basic.c:8535:23: note: Assignment 'instance=(struct _class_t*)n', assigned value is 0
+ _class_t* instance = (_class_t*)n;
+                      ^
+core/my_basic.c:8540:19: note: Null pointer dereference
+ _link_meta_class(instance->ref.s, instance, meta);
+                  ^
+core/my_basic.c:8603:3: warning: Either the condition 'ret' is redundant or there is possible null pointer dereference: r. [nullPointerRedundantCheck]
+ *r = is_a;
+  ^
+core/my_basic.c:8590:2: note: Assuming that condition 'ret' is not redundant
+ mb_assert(instance && meta && ret);
+ ^
+core/my_basic.c:8587:14: note: Assignment 'r=(unsigned char*)ret', assigned value is 0
+ bool_t* r = (bool_t*)ret;
+             ^
+core/my_basic.c:8603:3: note: Null pointer dereference
+ *r = is_a;
+  ^
+core/my_basic.c:8605:12: warning: Either the condition 'ret' is redundant or there is possible null pointer dereference: r. [nullPointerRedundantCheck]
+ return !(*r);
+           ^
+core/my_basic.c:8590:2: note: Assuming that condition 'ret' is not redundant
+ mb_assert(instance && meta && ret);
+ ^
+core/my_basic.c:8587:14: note: Assignment 'r=(unsigned char*)ret', assigned value is 0
+ bool_t* r = (bool_t*)ret;
+             ^
+core/my_basic.c:8605:12: note: Null pointer dereference
+ return !(*r);
+           ^
+core/my_basic.c:11073:4: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+   _handle_error_on_obj(s, SE_RN_INVALID_EXPRESSION, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+   ^
+core/my_basic.c:11143:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_INVALID_EXPRESSION, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:11148:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_INVALID_EXPRESSION, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:11200:6: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+     _handle_error_on_obj(s, SE_RN_INVALID_ID_USAGE, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+     ^
+core/my_basic.c:11203:5: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+    _handle_error_on_obj(s, SE_RN_COLON_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+    ^
+core/my_basic.c:11221:4: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+   _handle_error_on_obj(s, SE_RN_COLON_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+   ^
+core/my_basic.c:11313:4: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+   _handle_error_on_obj(s, SE_RN_NEXT_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+   ^
+core/my_basic.c:11357:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_TO_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:11362:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_SYNTAX_ERROR, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:11381:5: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+    _handle_error_on_obj(s, SE_RN_SYNTAX_ERROR, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+    ^
+core/my_basic.c:11474:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_SYNTAX_ERROR, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:11511:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_ITERABLE_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:11569:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_INVALID_ITERATOR, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:11636:4: warning: Possible null pointer dereference: (tmp)?((_object_t*)(tmp->data)):0 [nullPointer]
+   _handle_error_on_obj(s, SE_RN_SYNTAX_ERROR, s->source_file, DON(tmp), MB_FUNC_ERR, _exit, result);
+   ^
+core/my_basic.c:11681:4: warning: Either the condition 'l' is redundant or there is possible null pointer dereference: l. [nullPointerRedundantCheck]
+  *l = ast;
+   ^
+core/my_basic.c:11687:5: note: Assuming that condition 'l' is not redundant
+    _handle_error_on_obj(s, SE_RN_TOO_MANY_NESTED, s->source_file, DON2(l), MB_FUNC_ERR, _exit, result);
+    ^
+core/my_basic.c:11681:4: note: Null pointer dereference
+  *l = ast;
+   ^
+core/my_basic.c:11722:4: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+   _handle_error_on_obj(s, SE_RN_INCOMPLETE_STRUCTURE, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+   ^
+core/my_basic.c:12595:3: error: Null pointer dereference: (_object_t*)0 [nullPointer]
+  _handle_error_on_obj(s, SE_PS_INVALID_MODULE, s->source_file, (_object_t*)0, MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:12621:3: error: Null pointer dereference: (_object_t*)0 [nullPointer]
+  _handle_error_on_obj(s, SE_PS_INVALID_MODULE, s->source_file, (_object_t*)0, MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:12658:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_INCOMPLETE_STRUCTURE, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:12737:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_CLOSE_BRACKET_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:13139:2: warning: Possible null pointer dereference: (tmp)?((_object_t*)(tmp->data)):0 [nullPointer]
+ _using_jump_set_of_structured(s, tmp, _exit, result);
+ ^
+core/my_basic.c:14625:3: error: Null pointer dereference: (_object_t*)0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_INVALID_ID_USAGE, s->source_file, (_object_t*)0, MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:14653:3: error: Null pointer dereference: (_object_t*)0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_INVALID_ID_USAGE, s->source_file, (_object_t*)0, MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:15021:2: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+ _do_nothing(s, l, _exit, result);
+ ^
+core/my_basic.c:15089:2: warning: Either the condition 'l' is redundant or there is possible null pointer dereference: l. [nullPointerRedundantCheck]
+ _proc_div_by_zero(s, l, real_t, _exit, result, SE_RN_DIVIDE_BY_ZERO);
+ ^
+core/my_basic.c:15089:2: note: Assuming that condition 'l' is not redundant
+ _proc_div_by_zero(s, l, real_t, _exit, result, SE_RN_DIVIDE_BY_ZERO);
+ ^
+core/my_basic.c:15089:2: note: Null pointer dereference
+ _proc_div_by_zero(s, l, real_t, _exit, result, SE_RN_DIVIDE_BY_ZERO);
+ ^
+core/my_basic.c:15102:2: warning: Either the condition 'l' is redundant or there is possible null pointer dereference: l. [nullPointerRedundantCheck]
+ _proc_div_by_zero(s, l, int_t, _exit, result, SE_RN_DIVIDE_BY_ZERO);
+ ^
+core/my_basic.c:15102:2: note: Assuming that condition 'l' is not redundant
+ _proc_div_by_zero(s, l, int_t, _exit, result, SE_RN_DIVIDE_BY_ZERO);
+ ^
+core/my_basic.c:15102:2: note: Null pointer dereference
+ _proc_div_by_zero(s, l, int_t, _exit, result, SE_RN_DIVIDE_BY_ZERO);
+ ^
+core/my_basic.c:15124:2: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+ _do_nothing(s, l, _exit, result);
+ ^
+core/my_basic.c:15142:2: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+ _do_nothing(s, l, _exit, result);
+ ^
+core/my_basic.c:15526:34: warning: Either the condition 'l' is redundant or there is possible null pointer dereference: l. [nullPointerRedundantCheck]
+ fst = (_object_t*)((_tuple3_t*)*l)->e1;
+                                 ^
+core/my_basic.c:15533:3: note: Assuming that condition 'l' is not redundant
+  _handle_error_on_obj(s, SE_RN_SYNTAX_ERROR, s->source_file, TON(l), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:15526:34: note: Null pointer dereference
+ fst = (_object_t*)((_tuple3_t*)*l)->e1;
+                                 ^
+core/my_basic.c:15527:34: warning: Either the condition 'l' is redundant or there is possible null pointer dereference: l. [nullPointerRedundantCheck]
+ scd = (_object_t*)((_tuple3_t*)*l)->e2;
+                                 ^
+core/my_basic.c:15533:3: note: Assuming that condition 'l' is not redundant
+  _handle_error_on_obj(s, SE_RN_SYNTAX_ERROR, s->source_file, TON(l), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:15527:34: note: Null pointer dereference
+ scd = (_object_t*)((_tuple3_t*)*l)->e2;
+                                 ^
+core/my_basic.c:15528:34: warning: Either the condition 'l' is redundant or there is possible null pointer dereference: l. [nullPointerRedundantCheck]
+ val = (_object_t*)((_tuple3_t*)*l)->e3;
+                                 ^
+core/my_basic.c:15533:3: note: Assuming that condition 'l' is not redundant
+  _handle_error_on_obj(s, SE_RN_SYNTAX_ERROR, s->source_file, TON(l), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:15528:34: note: Null pointer dereference
+ val = (_object_t*)((_tuple3_t*)*l)->e3;
+                                 ^
+core/my_basic.c:15586:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_SYNTAX_ERROR, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:15612:4: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+   _handle_error_on_obj(s, SE_RN_CANNOT_ASSIGN_TO_RESERVED_WORD, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+   ^
+core/my_basic.c:15621:5: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+    _handle_error_on_obj(s, SE_RN_CANNOT_ASSIGN_TO_RESERVED_WORD, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+    ^
+core/my_basic.c:15625:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_CANNOT_ASSIGN_TO_RESERVED_WORD, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:15630:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_SYNTAX_ERROR, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:15661:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_ASSIGN_OPERATOR_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:15829:20: warning: Either the condition 'ast' is redundant or there is possible null pointer dereference: ast. [nullPointerRedundantCheck]
+ arr = (_object_t*)ast->data;
+                   ^
+core/my_basic.c:15835:3: note: Assuming that condition 'ast' is not redundant
+  _handle_error_on_obj(s, SE_RN_OPEN_BRACKET_EXPECTED, s->source_file, (ast && ast->next) ? ((_object_t*)ast->next->data) : 0, MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:15829:20: note: Null pointer dereference
+ arr = (_object_t*)ast->data;
+                   ^
+core/my_basic.c:15839:6: warning:inconclusive: Either the condition 'ast' is redundant or there is possible null pointer dereference: ast. [nullPointerRedundantCheck]
+ if(!ast->next) {
+     ^
+core/my_basic.c:15835:3: note: Assuming that condition 'ast' is not redundant
+  _handle_error_on_obj(s, SE_RN_OPEN_BRACKET_EXPECTED, s->source_file, (ast && ast->next) ? ((_object_t*)ast->next->data) : 0, MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:15828:11: note: Assignment to 'ast=ast->next'
+ ast = ast->next;
+          ^
+core/my_basic.c:15837:11: note: Assignment 'ast=ast->next', assigned value is 0
+ ast = ast->next;
+          ^
+core/my_basic.c:15839:6: note: Null pointer dereference
+ if(!ast->next) {
+     ^
+core/my_basic.c:15843:21: warning:inconclusive: Either the condition 'ast' is redundant or there is possible null pointer dereference: ast. [nullPointerRedundantCheck]
+ while(((_object_t*)ast->data)->type != _DT_FUNC || ((_object_t*)ast->data)->data.func->pointer != _core_close_bracket) {
+                    ^
+core/my_basic.c:15840:3: note: Assuming that condition 'ast' is not redundant
+  _handle_error_on_obj(s, SE_RN_INVALID_ID_USAGE, s->source_file, (ast && ast->next) ? ((_object_t*)ast->next->data) : 0, MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:15837:11: note: Assignment to 'ast=ast->next'
+ ast = ast->next;
+          ^
+core/my_basic.c:15842:11: note: Assignment 'ast=ast->next', assigned value is 0
+ ast = ast->next;
+          ^
+core/my_basic.c:15843:21: note: Null pointer dereference
+ while(((_object_t*)ast->data)->type != _DT_FUNC || ((_object_t*)ast->data)->data.func->pointer != _core_close_bracket) {
+                    ^
+core/my_basic.c:15847:4: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+   _handle_error_on_obj(s, SE_RN_UNEXPECTED_TYPE, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+   ^
+core/my_basic.c:15850:4: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+   _handle_error_on_obj(s, SE_RN_INDEX_OUT_OF_BOUND, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+   ^
+core/my_basic.c:15853:4: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+   _handle_error_on_obj(s, SE_RN_TOO_MANY_DIMENSIONS, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+   ^
+core/my_basic.c:15876:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_OUT_OF_MEMORY, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:15922:5: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+    _handle_error_on_obj(s, SE_RN_THEN_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+    ^
+core/my_basic.c:16000:8: warning: Either the condition 'obj' is redundant or there is possible null pointer dereference: (_object_t*)(obj). [nullPointerRedundantCheck]
+   if(!_IS_FUNC(obj, _core_else)) {
+       ^
+core/my_basic.c:15997:7: note: Assuming that condition 'obj' is not redundant
+  if(!_IS_EOS(obj)) {
+      ^
+core/my_basic.c:16000:8: note: Null pointer dereference
+   if(!_IS_FUNC(obj, _core_else)) {
+       ^
+core/my_basic.c:16001:5: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+    _handle_error_on_obj(s, SE_RN_ELSE_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+    ^
+core/my_basic.c:16013:6: warning: Possible null pointer dereference: (la)?((_object_t*)(la->data)):0 [nullPointer]
+     _handle_error_on_obj(s, SE_RN_ENDIF_EXPECTED, s->source_file, DON(la), MB_FUNC_ERR, _exit, result);
+     ^
+core/my_basic.c:16074:2: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+ _do_nothing(s, l, _exit, result);
+ ^
+core/my_basic.c:16084:2: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+ _do_nothing(s, l, _exit, result);
+ ^
+core/my_basic.c:16094:2: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+ _do_nothing(s, l, _exit, result);
+ ^
+core/my_basic.c:16104:2: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+ _do_nothing(s, l, _exit, result);
+ ^
+core/my_basic.c:16124:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_LOOP_VAR_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:16147:2: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+ _do_nothing(s, l, _exit, result);
+ ^
+core/my_basic.c:16157:2: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+ _do_nothing(s, l, _exit, result);
+ ^
+core/my_basic.c:16167:2: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+ _do_nothing(s, l, _exit, result);
+ ^
+core/my_basic.c:16249:5: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+    _handle_error_on_obj(s, SE_RN_SYNTAX_ERROR, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+    ^
+core/my_basic.c:16274:2: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+ _do_nothing(s, l, _exit, result);
+ ^
+core/my_basic.c:16296:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_SYNTAX_ERROR, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:16332:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_UNTIL_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:16362:2: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+ _do_nothing(s, l, _exit, result);
+ ^
+core/my_basic.c:16395:2: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+ _using_jump_set_of_instructional(s, ast, _exit, result);
+ ^
+core/my_basic.c:16399:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_JUMP_LABEL_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:16406:4: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+   _handle_error_on_obj(s, SE_RN_LABEL_DOES_NOT_EXIST, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+   ^
+core/my_basic.c:16412:13: warning: Either the condition '!label->node' is redundant or there is possible null pointer dereference: label->node. [nullPointerRedundantCheck]
+ ast = label->node->prev;
+            ^
+core/my_basic.c:16403:5: note: Assuming that condition '!label->node' is not redundant
+ if(!label->node) {
+    ^
+core/my_basic.c:16412:13: note: Null pointer dereference
+ ast = label->node->prev;
+            ^
+core/my_basic.c:16433:2: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+ _using_jump_set_of_instructional(s, ast, _exit, result);
+ ^
+core/my_basic.c:16468:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_NO_RETURN_POINT, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:16508:5: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+    _handle_error_on_obj(s, SE_RN_ROUTINE_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+    ^
+core/my_basic.c:16553:13: warning: Possible null pointer dereference: obj [nullPointer]
+  routine = obj->data.routine;
+            ^
+core/my_basic.c:16552:9: note: Assignment 'obj=(!obj)?0:(((obj)&&((_object_t*)(obj))->type==_DT_ROUTINE)?obj:(((obj)&&((_object_t*)(obj))->type==_DT_VAR)&&((obj->data.variable->data)&&((_object_t*)(obj->data.variable->data))->type==_DT_ROUTINE)?(obj)->data.variable->data:0))', assigned value is 0
+  obj = _GET_ROUTINE(obj);
+        ^
+core/my_basic.c:16553:13: note: Null pointer dereference
+  routine = obj->data.routine;
+            ^
+core/my_basic.c:16582:15: warning: Possible null pointer dereference: obj [nullPointer]
+    routine = obj->data.routine;
+              ^
+core/my_basic.c:16581:11: note: Assignment 'obj=(!obj)?0:(((obj)&&((_object_t*)(obj))->type==_DT_ROUTINE)?obj:(((obj)&&((_object_t*)(obj))->type==_DT_VAR)&&((obj->data.variable->data)&&((_object_t*)(obj->data.variable->data))->type==_DT_ROUTINE)?(obj)->data.variable->data:0))', assigned value is 0
+    obj = _GET_ROUTINE(obj);
+          ^
+core/my_basic.c:16582:15: note: Null pointer dereference
+    routine = obj->data.routine;
+              ^
+core/my_basic.c:16624:2: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+ _using_jump_set_of_structured(s, ast, _exit, result);
+ ^
+core/my_basic.c:16631:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_ROUTINE_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:16633:5: warning:inconclusive: Possible null pointer dereference: obj [nullPointer]
+ if(obj->data.routine->func.basic.entry) {
+    ^
+core/my_basic.c:16629:12: note: Assignment 'obj=ast?(struct _object_t*)ast->data:0', assigned value is 0
+ obj = ast ? (_object_t*)ast->data : 0;
+           ^
+core/my_basic.c:16633:5: note: Null pointer dereference
+ if(obj->data.routine->func.basic.entry) {
+    ^
+core/my_basic.c:16634:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_DUPLICATE_ROUTINE, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:16640:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_OPEN_BRACKET_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:16692:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_NO_RETURN_POINT, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:16755:2: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+ _using_jump_set_of_structured(s, ast, _exit, result);
+ ^
+core/my_basic.c:16772:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_CLASS_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:16774:13: warning:inconclusive: Possible null pointer dereference: obj [nullPointer]
+ instance = obj->data.instance;
+            ^
+core/my_basic.c:16770:8: note: Assignment 'obj=(!obj)?0:(((obj)&&((_object_t*)(obj))->type==_DT_CLASS)?obj:(((obj)&&((_object_t*)(obj))->type==_DT_VAR)&&((obj->data.variable->data)&&((_object_t*)(obj->data.variable->data))->type==_DT_CLASS)?(obj)->data.variable->data:0))', assigned value is 0
+ obj = _GET_CLASS(obj);
+       ^
+core/my_basic.c:16774:13: note: Null pointer dereference
+ instance = obj->data.instance;
+            ^
+core/my_basic.c:16793:5: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+    _handle_error_on_obj(s, SE_RN_CLASS_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+    ^
+core/my_basic.c:16795:14: warning:inconclusive: Possible null pointer dereference: obj [nullPointer]
+   inherit = obj->data.instance;
+             ^
+core/my_basic.c:16791:10: note: Assignment 'obj=(!obj)?0:(((obj)&&((_object_t*)(obj))->type==_DT_CLASS)?obj:(((obj)&&((_object_t*)(obj))->type==_DT_VAR)&&((obj->data.variable->data)&&((_object_t*)(obj->data.variable->data))->type==_DT_CLASS)?(obj)->data.variable->data:0))', assigned value is 0
+   obj = _GET_CLASS(obj);
+         ^
+core/my_basic.c:16795:14: note: Null pointer dereference
+   inherit = obj->data.instance;
+             ^
+core/my_basic.c:16803:4: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+   _handle_error_on_obj(s, SE_RN_CLOSE_BRACKET_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+   ^
+core/my_basic.c:16829:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_HASH_AND_COMPARE_MUST_BE_PROVIDED_TOGETHER, s->source_file, DON(ast), MB_FUNC_WARNING, _exit, result);
+  ^
+core/my_basic.c:16855:2: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+ _do_nothing(s, l, _exit, result);
+ ^
+core/my_basic.c:16918:22: warning: Either the condition 'l' is redundant or there is possible null pointer dereference: l. [nullPointerRedundantCheck]
+ ast = (_ls_node_t*)*l;
+                     ^
+core/my_basic.c:16922:3: note: Assuming that condition 'l' is not redundant
+  _handle_error_on_obj(s, SE_RN_CLASS_EXPECTED, s->source_file, DON2(l), MB_FUNC_WARNING, _exit, result);
+  ^
+core/my_basic.c:16918:22: note: Null pointer dereference
+ ast = (_ls_node_t*)*l;
+                     ^
+core/my_basic.c:17067:22: warning: Either the condition 'l' is redundant or there is possible null pointer dereference: l. [nullPointerRedundantCheck]
+ ast = (_ls_node_t*)*l;
+                     ^
+core/my_basic.c:17076:4: note: Assuming that condition 'l' is not redundant
+   _handle_error_on_obj(s, SE_RN_INVALID_LAMBDA, s->source_file, DON2(l), MB_FUNC_ERR, _error, result);
+   ^
+core/my_basic.c:17067:22: note: Null pointer dereference
+ ast = (_ls_node_t*)*l;
+                     ^
+core/my_basic.c:17083:9: warning: Either the condition 'ast' is redundant or there is possible null pointer dereference: ast. [nullPointerRedundantCheck]
+  ast = ast->next;
+        ^
+core/my_basic.c:17080:6: note: Assuming that condition 'ast' is not redundant
+  if(ast)
+     ^
+core/my_basic.c:17083:9: note: Null pointer dereference
+  ast = ast->next;
+        ^
+core/my_basic.c:18011:22: warning: Either the condition 'l' is redundant or there is possible null pointer dereference: l. [nullPointerRedundantCheck]
+ ast = (_ls_node_t*)*l;
+                     ^
+core/my_basic.c:18013:3: note: Assuming that condition 'l' is not redundant
+  _handle_error_on_obj(s, SE_RN_INVALID_ITERATOR, s->source_file, DON2(l), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:18011:22: note: Null pointer dereference
+ ast = (_ls_node_t*)*l;
+                     ^
+core/my_basic.c:18137:4: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+   _handle_error_on_obj(s, SE_CM_NOT_SUPPORTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+   ^
+core/my_basic.c:18371:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_SYNTAX_ERROR, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:18503:4: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+   _handle_error_on_obj(s, SE_CM_NOT_SUPPORTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+   ^
+core/my_basic.c:18517:4: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+   _handle_error_on_obj(s, SE_RN_COMMA_OR_SEMICOLON_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+   ^
+core/my_basic.c:18566:4: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+   _handle_error_on_obj(s, SE_RN_COMMA_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+   ^
+core/my_basic.c:18572:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_VAR_EXPECTED, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:18590:5: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+    _handle_error_on_obj(s, SE_RN_INVALID_ID_USAGE, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+    ^
+core/my_basic.c:18627:3: warning: Possible null pointer dereference: (ast)?((_object_t*)(ast->data)):0 [nullPointer]
+  _handle_error_on_obj(s, SE_RN_INVALID_ID_USAGE, s->source_file, DON(ast), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:18656:23: warning: Either the condition 'l' is redundant or there is possible null pointer dereference: l. [nullPointerRedundantCheck]
+  ast = (_ls_node_t*)*l;
+                      ^
+core/my_basic.c:18674:5: note: Assuming that condition 'l' is not redundant
+    _handle_error_on_obj(s, SE_RN_INVALID_EXPRESSION, s->source_file, DON2(l), MB_FUNC_ERR, _error, result);
+    ^
+core/my_basic.c:18656:23: note: Null pointer dereference
+  ast = (_ls_node_t*)*l;
+                      ^
+core/my_basic.c:19374:22: warning: Either the condition 'l' is redundant or there is possible null pointer dereference: l. [nullPointerRedundantCheck]
+ ast = (_ls_node_t*)*l;
+                     ^
+core/my_basic.c:19376:3: note: Assuming that condition 'l' is not redundant
+  _handle_error_on_obj(s, SE_RN_INVALID_ITERATOR, s->source_file, DON2(l), MB_FUNC_ERR, _exit, result);
+  ^
+core/my_basic.c:19374:22: note: Null pointer dereference
+ ast = (_ls_node_t*)*l;
+                     ^
+core/my_basic.c:3610:9: style: Redundant initialization for 'result'. The initialized value is overwritten before it is read. [redundantInitialization]
+ result = _PRECEDE_TABLE[idx1][idx2];
+        ^
+core/my_basic.c:3601:14: note: result is initialized
+ char result = _ZERO_CHAR;
+             ^
+core/my_basic.c:3610:9: note: result is overwritten
+ result = _PRECEDE_TABLE[idx1][idx2];
+        ^
+core/my_basic.c:5884:12: style: Redundant initialization for 'last_char'. The initialized value is overwritten before it is read. [redundantInitialization]
+ last_char = context->current_char;
+           ^
+core/my_basic.c:5857:17: note: last_char is initialized
+ char last_char = _ZERO_CHAR;
+                ^
+core/my_basic.c:5884:12: note: last_char is overwritten
+ last_char = context->current_char;
+           ^
+core/my_basic.c:16730:12: style: Variable 'arg.type' is reassigned a value before the old one has been used. [redundantAssignment]
+  arg.type = MB_DT_UNKNOWN;
+           ^
+core/my_basic.c:16729:3: note: arg.type is assigned
+  mb_make_nil(arg);
+  ^
+core/my_basic.c:16730:12: note: arg.type is overwritten
+  arg.type = MB_DT_UNKNOWN;
+           ^
+core/my_basic.c:4082:17: style: Same expression on both sides of '&&'. [duplicateExpression]
+         if(ast && ast && _IS_FUNC(ast->data, _core_open_bracket)) {
+                ^
+core/my_basic.c:7691:20: style: Opposite expression on both sides of '||'. [oppositeExpression]
+ if(!it->curr_node || it->curr_node == _INVALID_DICT_IT) {
+                   ^
+core/my_basic.c:2595:6: style: The scope of the variable 'opresult' can be reduced. [variableScope]
+ int opresult = _OP_RESULT_NORMAL;
+     ^
+core/my_basic.c:2623:37: style: The scope of the variable 'oldhead' can be reduced. [variableScope]
+ _ls_node_t* p, * q, * e, * tail, * oldhead;
+                                    ^
+core/my_basic.c:2624:14: style: The scope of the variable 'nmerges' can be reduced. [variableScope]
+ int insize, nmerges, psize, qsize, i;
+             ^
+core/my_basic.c:2850:11: style: The scope of the variable 'h' can be reduced. [variableScope]
+ unsigned h = 0;
+          ^
+core/my_basic.c:3073:11: style: The scope of the variable 'hash_code' can be reduced. [variableScope]
+ unsigned hash_code = 0;
+          ^
+core/my_basic.c:3074:11: style: The scope of the variable 'ul' can be reduced. [variableScope]
+ unsigned ul = 0;
+          ^
+core/my_basic.c:3125:14: style: The scope of the variable 'bucket' can be reduced. [variableScope]
+ _ls_node_t* bucket = 0;
+             ^
+core/my_basic.c:3126:11: style: The scope of the variable 'ul' can be reduced. [variableScope]
+ unsigned ul = 0;
+          ^
+core/my_basic.c:3146:11: style: The scope of the variable 'ul' can be reduced. [variableScope]
+ unsigned ul = 0;
+          ^
+core/my_basic.c:3160:11: style: The scope of the variable 'ul' can be reduced. [variableScope]
+ unsigned ul = 0;
+          ^
+core/my_basic.c:4952:8: style: The scope of the variable 'fp' can be reduced. [variableScope]
+ FILE* fp = 0;
+       ^
+core/my_basic.c:4954:7: style: The scope of the variable 'curpos' can be reduced. [variableScope]
+ long curpos = 0;
+      ^
+core/my_basic.c:4955:7: style: The scope of the variable 'l' can be reduced. [variableScope]
+ long l = 0;
+      ^
+core/my_basic.c:4956:7: style: The scope of the variable 'i' can be reduced. [variableScope]
+ long i = 0;
+      ^
+core/my_basic.c:5171:8: style: The scope of the variable 'sym' can be reduced. [variableScope]
+ char* sym = 0;
+       ^
+core/my_basic.c:6654:14: style: The scope of the variable 'scope' can be reduced. [variableScope]
+ _ht_node_t* scope = 0;
+             ^
+core/my_basic.c:7865:6: style: The scope of the variable 'n' can be reduced. [variableScope]
+ int n = 0;
+     ^
+core/my_basic.c:7876:7: style: The scope of the variable 'head' can be reduced. [variableScope]
+  int head = 0,
+      ^
+core/my_basic.c:9216:26: style: The scope of the variable 'root_ref' can be reduced. [variableScope]
+ _running_context_ref_t* root_ref = 0;
+                         ^
+core/my_basic.c:9330:12: style: The scope of the variable 'meta' can be reduced. [variableScope]
+ _class_t* meta = 0;
+           ^
+core/my_basic.c:9776:10: style: The scope of the variable 'var' can be reduced. [variableScope]
+ _var_t* var = 0;
+         ^
+core/my_basic.c:9777:12: style: The scope of the variable 'arr' can be reduced. [variableScope]
+ _array_t* arr = 0;
+           ^
+core/my_basic.c:11972:15: style: The scope of the variable 'tmp' can be reduced. [variableScope]
+  _ls_node_t* tmp = 0;
+              ^
+core/my_basic.c:12006:20: style: The scope of the variable 'mp' can be reduced. [variableScope]
+   _module_func_t* mp = 0;
+                   ^
+core/my_basic.c:2477:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(tmp);
+  ^
+core/my_basic.c:2507:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(tmp);
+  ^
+core/my_basic.c:2555:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(node);
+ ^
+core/my_basic.c:2581:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   safe_free(tmp);
+   ^
+core/my_basic.c:2612:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   safe_free(tmp);
+   ^
+core/my_basic.c:2743:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(tmp);
+  ^
+core/my_basic.c:2749:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(list);
+ ^
+core/my_basic.c:2758:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(extra);
+ ^
+core/my_basic.c:3173:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(ht->array);
+  ^
+core/my_basic.c:3175:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(ht);
+ ^
+core/my_basic.c:3204:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(buf->pointer.charp);
+  ^
+core/my_basic.c:3225:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   safe_free(buf->pointer.charp);
+   ^
+core/my_basic.c:3649:2: warning: Conversion of string literal "Unknown operator." to bool always evaluates to true. [incorrectStringBooleanError]
+ mb_assert(0 && "Unknown operator.");
+ ^
+core/my_basic.c:3680:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   safe_free(result);
+   ^
+core/my_basic.c:4040:8: warning: Conversion of string literal "Unsupported." to bool always evaluates to true. [incorrectStringBooleanError]
+       mb_assert(0 && "Unsupported.");
+       ^
+core/my_basic.c:4259:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   _LS_FOREACH(garbage, _do_nothing_on_object, _remove_if_exists, opnd);
+   ^
+core/my_basic.c:4265:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  _LS_FOREACH(garbage, _destroy_object, _try_clear_intermediate_value, s);
+  ^
+core/my_basic.c:4301:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  _LS_FOREACH(var_args, _do_nothing_on_object, _destroy_var_arg, &s->gc);
+  ^
+core/my_basic.c:5183:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   safe_free(sym);
+   ^
+core/my_basic.c:5276:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   safe_free(*obj);
+   ^
+core/my_basic.c:5278:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(sym);
+  ^
+core/my_basic.c:5284:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(sym);
+  ^
+core/my_basic.c:5290:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(sym);
+  ^
+core/my_basic.c:5477:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(sym);
+  ^
+core/my_basic.c:5481:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(sym);
+  ^
+core/my_basic.c:5551:6: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+     safe_free(ns);
+     ^
+core/my_basic.c:5573:6: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+     safe_free(buf);
+     ^
+core/my_basic.c:5952:5: warning: Conversion of string literal "Impossible." to bool always evaluates to true. [incorrectStringBooleanError]
+    mb_assert(0 && "Impossible.");
+    ^
+core/my_basic.c:6008:3: warning: Conversion of string literal "Unknown parsing state." to bool always evaluates to true. [incorrectStringBooleanError]
+  mb_assert(0 && "Unknown parsing state.");
+  ^
+core/my_basic.c:6133:3: warning: Conversion of string literal "Unsupported." to bool always evaluates to true. [incorrectStringBooleanError]
+  mb_assert(0 && "Unsupported.");
+  ^
+core/my_basic.c:6267:3: warning: Conversion of string literal "Buffer overflow." to bool always evaluates to true. [incorrectStringBooleanError]
+  mb_assert(0 && "Buffer overflow.");
+  ^
+core/my_basic.c:6368:3: warning: Conversion of string literal "Too many referencing, count overflow, please redefine _ref_count_t." to bool always evaluates to true. [incorrectStringBooleanError]
+  mb_assert(0 && "Too many referencing, count overflow, please redefine _ref_count_t.");
+  ^
+core/my_basic.c:6411:3: warning: Conversion of string literal "Too many referencing, weak count overflow, please redefine _ref_count_t." to bool always evaluates to true. [incorrectStringBooleanError]
+  mb_assert(0 && "Too many referencing, weak count overflow, please redefine _ref_count_t.");
+  ^
+core/my_basic.c:6429:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(weak->weak_count);
+  ^
+core/my_basic.c:6430:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(weak->count);
+  ^
+core/my_basic.c:6465:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(ref->weak_count);
+  ^
+core/my_basic.c:6466:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(ref->count);
+  ^
+core/my_basic.c:6561:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   _LS_FOREACH(obj->data.list->list, _do_nothing_on_object, _gc_add_reachable, ht);
+   ^
+core/my_basic.c:6568:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   _HT_FOREACH(obj->data.dict->dict, _do_nothing_on_object, _gc_add_reachable_both, ht);
+   ^
+core/my_basic.c:6575:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   _LS_FOREACH(obj->data.list_it->list->list, _do_nothing_on_object, _gc_add_reachable, ht);
+   ^
+core/my_basic.c:6582:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   _HT_FOREACH(obj->data.dict_it->dict->dict, _do_nothing_on_object, _gc_add_reachable_both, ht);
+   ^
+core/my_basic.c:6602:5: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+    _HT_FOREACH(obj->data.routine->func.lambda.scope->var_dict, _do_nothing_on_object, _gc_add_reachable, ht);
+    ^
+core/my_basic.c:6605:6: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+     _HT_FOREACH(outs->scope->var_dict, _do_nothing_on_object, _gc_add_reachable, ht);
+     ^
+core/my_basic.c:6662:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   _HT_FOREACH(scope, _do_nothing_on_object, _gc_add_reachable, ht);
+   ^
+core/my_basic.c:6690:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(obj);
+ ^
+core/my_basic.c:6704:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(obj);
+ ^
+core/my_basic.c:6708:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(obj);
+ ^
+core/my_basic.c:6725:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(obj->data.variable->name);
+  ^
+core/my_basic.c:6726:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(obj->data.variable);
+  ^
+core/my_basic.c:6730:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(obj);
+ ^
+core/my_basic.c:6749:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   safe_free(obj->data.variable->data);
+   ^
+core/my_basic.c:6756:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(obj->data.variable->name);
+  ^
+core/my_basic.c:6757:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(obj->data.variable);
+  ^
+core/my_basic.c:6761:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(obj);
+ ^
+core/my_basic.c:6771:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  _HT_FOREACH(scope->scope->var_dict, _do_nothing_on_object, _gc_destroy_garbage_in_lambda, gc);
+  ^
+core/my_basic.c:6803:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  _LS_FOREACH(lst->list, _do_nothing_on_object, _gc_destroy_garbage_in_list, gc);
+  ^
+core/my_basic.c:6810:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  _HT_FOREACH(dct->dict, _do_nothing_on_object, _gc_destroy_garbage_in_dict, gc);
+  ^
+core/my_basic.c:6819:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   _HT_FOREACH(routine->func.lambda.scope->var_dict, _do_nothing_on_object, _gc_destroy_garbage_in_lambda, gc);
+   ^
+core/my_basic.c:6830:5: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+    _HT_FOREACH(outs->scope->var_dict, _do_nothing_on_object, _remove_this_lambda_from_upvalue, routine);
+    ^
+core/my_basic.c:6876:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  _HT_FOREACH(instance->scope->var_dict, _do_nothing_on_object, _gc_destroy_garbage_in_class, gc);
+  ^
+core/my_basic.c:6996:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  _LS_FOREACH(s->all_forked, _do_nothing_on_object, _gc_get_reachable_in_forked, valid);
+  ^
+core/my_basic.c:7003:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ _HT_FOREACH(valid, _do_nothing_on_object, _ht_remove_existing, gc->table);
+ ^
+core/my_basic.c:7004:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ _HT_FOREACH(valid, _do_nothing_on_object, _ht_remove_existing, gc->recursive_table);
+ ^
+core/my_basic.c:7010:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  _HT_FOREACH(gc->table, _do_nothing_on_object, _gc_destroy_garbage_class, &s->gc);
+  ^
+core/my_basic.c:7012:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  _HT_FOREACH(gc->table, _do_nothing_on_object, _gc_destroy_garbage, &s->gc);
+  ^
+core/my_basic.c:7014:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  _HT_FOREACH(gc->table, _do_nothing_on_object, _gc_destroy_garbage_outer_scope, &s->gc);
+  ^
+core/my_basic.c:7064:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(c->calc_operators);
+  ^
+core/my_basic.c:7067:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(c);
+ ^
+core/my_basic.c:7176:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(arr->name);
+  ^
+core/my_basic.c:7186:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(arr);
+ ^
+core/my_basic.c:7379:3: warning: Conversion of string literal "Unsupported." to bool always evaluates to true. [incorrectStringBooleanError]
+  mb_assert(0 && "Unsupported.");
+  ^
+core/my_basic.c:7492:6: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+     safe_free(str);
+     ^
+core/my_basic.c:7496:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(arr->raw);
+  ^
+core/my_basic.c:7543:23: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ if(c->range_begin) { safe_free(c->range_begin); }
+                      ^
+core/my_basic.c:7547:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(c);
+ ^
+core/my_basic.c:7571:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(c);
+ ^
+core/my_basic.c:7603:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(it);
+ ^
+core/my_basic.c:7671:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(it);
+ ^
+core/my_basic.c:7917:5: warning: Conversion of string literal "Impossible." to bool always evaluates to true. [incorrectStringBooleanError]
+    mb_assert(0 && "Impossible.");
+    ^
+core/my_basic.c:7972:26: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ if(coll->range_begin) { safe_free(coll->range_begin); }
+                         ^
+core/my_basic.c:8019:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(coll->range_begin);
+  ^
+core/my_basic.c:8162:3: warning: Conversion of string literal "Impossible." to bool always evaluates to true. [incorrectStringBooleanError]
+  mb_assert(0 && "Impossible.");
+  ^
+core/my_basic.c:8381:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(c->scope);
+ ^
+core/my_basic.c:8383:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(c->name);
+ ^
+core/my_basic.c:8384:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(c);
+ ^
+core/my_basic.c:8396:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  _HT_FOREACH(c->scope->var_dict, _do_nothing_on_object, scope_walker, extra_data);
+  ^
+core/my_basic.c:8449:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ _LS_FOREACH(derived->meta_list, _do_nothing_on_object, _unlink_meta_instance, derived);
+ ^
+core/my_basic.c:8950:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   safe_free(r->name);
+   ^
+core/my_basic.c:8954:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   safe_free(r->source_file);
+   ^
+core/my_basic.c:8973:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   safe_free(r->func.lambda.scope);
+   ^
+core/my_basic.c:8988:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(r);
+ ^
+core/my_basic.c:9072:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(scope);
+  ^
+core/my_basic.c:9169:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   _HT_FOREACH(lambda->upvalues, _do_nothing_on_ht_for_lambda, _fill_with_upvalue, tuple);
+   ^
+core/my_basic.c:9172:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  _HT_FOREACH(tuple->filled, _do_nothing_on_ht_for_lambda, _remove_filled_upvalue, lambda->upvalues);
+  ^
+core/my_basic.c:9369:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  _LS_FOREACH(r->func.basic.parameters, _do_nothing_on_object, _duplicate_parameter, result);
+  ^
+core/my_basic.c:9415:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(p);
+ ^
+core/my_basic.c:9466:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  _LS_FOREACH(running->refered_lambdas, _do_nothing_on_ht_for_lambda, _fill_outer_scope, &tuple);
+  ^
+core/my_basic.c:9477:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   _HT_FOREACH(running->var_dict, _do_nothing_on_object, _lose_object, running);
+   ^
+core/my_basic.c:9724:5: warning: Conversion of string literal "Unsupported." to bool always evaluates to true. [incorrectStringBooleanError]
+    mb_assert(0 && "Unsupported.");
+    ^
+core/my_basic.c:9873:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   _LS_FOREACH(obj->data.list->list, _do_nothing_on_object, _clone_to_list, tgt->data.list);
+   ^
+core/my_basic.c:9888:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   _HT_FOREACH(obj->data.dict->dict, _do_nothing_on_object, _clone_to_dict, tgt->data.dict);
+   ^
+core/my_basic.c:9914:5: warning: Conversion of string literal "Impossible." to bool always evaluates to true. [incorrectStringBooleanError]
+    mb_assert(0 && "Impossible.");
+    ^
+core/my_basic.c:9949:3: warning: Conversion of string literal "Invalid type." to bool always evaluates to true. [incorrectStringBooleanError]
+  mb_assert(0 && "Invalid type.");
+  ^
+core/my_basic.c:9980:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   safe_free(var->name);
+   ^
+core/my_basic.c:9986:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   safe_free(var);
+   ^
+core/my_basic.c:9993:5: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+    safe_free(obj->data.string);
+    ^
+core/my_basic.c:9999:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(obj->data.func->name);
+  ^
+core/my_basic.c:10000:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(obj->data.func);
+  ^
+core/my_basic.c:10015:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   safe_free(obj->data.label->name);
+   ^
+core/my_basic.c:10016:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   safe_free(obj->data.label);
+   ^
+core/my_basic.c:10026:6: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+     safe_free(obj->data.import_info->source_file);
+     ^
+core/my_basic.c:10028:5: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+    safe_free(obj->data.import_info);
+    ^
+core/my_basic.c:10044:3: warning: Conversion of string literal "Invalid type." to bool always evaluates to true. [incorrectStringBooleanError]
+  mb_assert(0 && "Invalid type.");
+  ^
+core/my_basic.c:10075:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(obj);
+ ^
+core/my_basic.c:10091:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(obj);
+ ^
+core/my_basic.c:10095:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(obj);
+ ^
+core/my_basic.c:10113:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(obj);
+  ^
+core/my_basic.c:10129:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(obj);
+ ^
+core/my_basic.c:10215:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(data);
+ ^
+core/my_basic.c:10684:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(obj);
+ ^
+core/my_basic.c:10691:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ _LS_FOREACH(s->edge_destroy_objects, _destroy_object, _try_clear_intermediate_value, s);
+ ^
+core/my_basic.c:10712:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ _LS_FOREACH(s->lazy_destroy_objects, _destroy_object, _try_clear_intermediate_value, s);
+ ^
+core/my_basic.c:10816:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(running);
+  ^
+core/my_basic.c:10922:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  _LS_FOREACH(s->all_forked, _do_nothing_on_object, _collect_intermediate_value_in_scope_chain, data);
+  ^
+core/my_basic.c:11803:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(*context);
+  ^
+core/my_basic.c:11835:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(mod->module);
+ ^
+core/my_basic.c:11836:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(mod);
+ ^
+core/my_basic.c:11853:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(n);
+ ^
+core/my_basic.c:11915:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(name);
+  ^
+core/my_basic.c:11936:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(n);
+ ^
+core/my_basic.c:11968:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(name);
+ ^
+core/my_basic.c:11983:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(n);
+ ^
+core/my_basic.c:12020:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(n);
+ ^
+core/my_basic.c:12183:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(_exp_assign->data.func->name);
+ ^
+core/my_basic.c:12184:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(_exp_assign->data.func);
+ ^
+core/my_basic.c:12185:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(_exp_assign);
+ ^
+core/my_basic.c:12190:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(_OBJ_BOOL_TRUE->data.variable->data);
+  ^
+core/my_basic.c:12191:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(_OBJ_BOOL_TRUE->data.variable->name);
+  ^
+core/my_basic.c:12192:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(_OBJ_BOOL_TRUE->data.variable);
+  ^
+core/my_basic.c:12193:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(_OBJ_BOOL_TRUE);
+  ^
+core/my_basic.c:12198:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(_OBJ_BOOL_FALSE->data.variable->data);
+  ^
+core/my_basic.c:12199:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(_OBJ_BOOL_FALSE->data.variable->name);
+  ^
+core/my_basic.c:12200:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(_OBJ_BOOL_FALSE->data.variable);
+  ^
+core/my_basic.c:12201:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(_OBJ_BOOL_FALSE);
+  ^
+core/my_basic.c:12297:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ _LS_FOREACH(ast, _destroy_object, _try_clear_intermediate_value, *s);
+ ^
+core/my_basic.c:12355:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(*s);
+ ^
+core/my_basic.c:12391:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ _LS_FOREACH(ast, _destroy_object, _try_clear_intermediate_value, *s);
+ ^
+core/my_basic.c:12531:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(*s);
+ ^
+core/my_basic.c:12619:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(s->with_module);
+  ^
+core/my_basic.c:13334:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ _HT_FOREACH(running->var_dict, _do_nothing_on_object, _retrieve_var, &tuple);
+ ^
+core/my_basic.c:13905:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  _HT_FOREACH(dct->dict, _do_nothing_on_object, _copy_keys_to_value_array, &helper);
+  ^
+core/my_basic.c:14198:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(val.value.string);
+  ^
+core/my_basic.c:14439:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  safe_free(buf);
+  ^
+core/my_basic.c:15037:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   _instruct_connect_strings(l);
+   ^
+core/my_basic.c:15089:2: warning: Conversion of string literal "Invalid real number precision." to bool always evaluates to true. [incorrectStringBooleanError]
+ _proc_div_by_zero(s, l, real_t, _exit, result, SE_RN_DIVIDE_BY_ZERO);
+ ^
+core/my_basic.c:15102:2: warning: Conversion of string literal "Invalid real number precision." to bool always evaluates to true. [incorrectStringBooleanError]
+ _proc_div_by_zero(s, l, int_t, _exit, result, SE_RN_DIVIDE_BY_ZERO);
+ ^
+core/my_basic.c:15674:6: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+     safe_free(val);
+     ^
+core/my_basic.c:15681:6: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+     safe_free(val);
+     ^
+core/my_basic.c:15789:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   safe_free(val);
+   ^
+core/my_basic.c:15798:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   safe_free(val->data.string);
+   ^
+core/my_basic.c:15804:2: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+ safe_free(val);
+ ^
+core/my_basic.c:17928:4: warning: Conversion of string literal "Buffer overflow." to bool always evaluates to true. [incorrectStringBooleanError]
+   mb_assert(0 && "Buffer overflow.");
+   ^
+core/my_basic.c:18446:6: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+     safe_free(val_ptr->data.string);
+     ^
+core/my_basic.c:18597:4: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+   safe_free(obj->data.variable->data->data.string);
+   ^
+core/my_basic.c:19284:3: warning: Conversion of string literal "Memory already released." to bool always evaluates to true. [incorrectStringBooleanError]
+  _LS_FOREACH(ocoll.data.list->list, _do_nothing_on_object, _copy_list_to_array, &helper);
+  ^
+core/my_basic.c:606:42: style: union member '_raw_u::c' is never used. [unusedStructMember]
+typedef union _raw_u { mb_data_e e; char c; int_t i; real_t r; void* p; mb_val_bytes_t b; } _raw_u;
+                                         ^
+core/my_basic.c:606:88: style: union member '_raw_u::b' is never used. [unusedStructMember]
+typedef union _raw_u { mb_data_e e; char c; int_t i; real_t r; void* p; mb_val_bytes_t b; } _raw_u;
+                                                                                       ^
+core/my_basic.c:2595:15: style: Variable 'opresult' is assigned a value that is never used. [unreadVariable]
+ int opresult = _OP_RESULT_NORMAL;
+              ^
+core/my_basic.c:2597:18: style: Variable 'tmp' is assigned a value that is never used. [unreadVariable]
+ _ls_node_t* tmp = 0;
+                 ^
+core/my_basic.c:3073:21: style: Variable 'hash_code' is assigned a value that is never used. [unreadVariable]
+ unsigned hash_code = 0;
+                    ^
+core/my_basic.c:3074:14: style: Variable 'ul' is assigned a value that is never used. [unreadVariable]
+ unsigned ul = 0;
+             ^
+core/my_basic.c:3112:9: style: Variable 'bucket' is assigned a value that is never used. [unreadVariable]
+ bucket = _ht_find(ht, key);
+        ^
+core/my_basic.c:3125:21: style: Variable 'bucket' is assigned a value that is never used. [unreadVariable]
+ _ls_node_t* bucket = 0;
+                    ^
+core/my_basic.c:3126:14: style: Variable 'ul' is assigned a value that is never used. [unreadVariable]
+ unsigned ul = 0;
+             ^
+core/my_basic.c:3146:14: style: Variable 'ul' is assigned a value that is never used. [unreadVariable]
+ unsigned ul = 0;
+             ^
+core/my_basic.c:3160:14: style: Variable 'ul' is assigned a value that is never used. [unreadVariable]
+ unsigned ul = 0;
+             ^
+core/my_basic.c:3431:13: style: Variable 'codepoint' is assigned a value that is never used. [unreadVariable]
+  codepoint = (unsigned char)c;
+            ^
+core/my_basic.c:4345:19: style: Variable 'pars' is assigned a value that is never used. [unreadVariable]
+ _ls_node_t* pars = 0;
+                  ^
+core/my_basic.c:4722:10: style: Variable 'running' is assigned a value that is never used. [unreadVariable]
+ running = _unlink_lambda_scope_chain(s, &r->func.lambda, false);
+         ^
+core/my_basic.c:4952:11: style: Variable 'fp' is assigned a value that is never used. [unreadVariable]
+ FILE* fp = 0;
+          ^
+core/my_basic.c:4954:14: style: Variable 'curpos' is assigned a value that is never used. [unreadVariable]
+ long curpos = 0;
+             ^
+core/my_basic.c:4955:9: style: Variable 'l' is assigned a value that is never used. [unreadVariable]
+ long l = 0;
+        ^
+core/my_basic.c:5171:12: style: Variable 'sym' is assigned a value that is never used. [unreadVariable]
+ char* sym = 0;
+           ^
+core/my_basic.c:5199:19: style: Variable 'node' is assigned a value that is never used. [unreadVariable]
+ _ls_node_t* node = 0;
+                  ^
+core/my_basic.c:5200:30: style: Variable 'context' is assigned a value that is never used. [unreadVariable]
+ _parsing_context_t* context = 0;
+                             ^
+core/my_basic.c:6654:20: style: Variable 'scope' is assigned a value that is never used. [unreadVariable]
+ _ht_node_t* scope = 0;
+                   ^
+core/my_basic.c:6674:5: style: Variable 'ht' is assigned a value that is never used. [unreadVariable]
+ ht = (_ht_node_t*)h;
+    ^
+core/my_basic.c:7114:18: style: Variable 'func' is assigned a value that is never used. [unreadVariable]
+  mb_func_t func = 0;
+                 ^
+core/my_basic.c:7456:12: style: Variable 'str' is assigned a value that is never used. [unreadVariable]
+ char* str = 0;
+           ^
+core/my_basic.c:7457:17: style: Variable 'elemsize' is assigned a value that is never used. [unreadVariable]
+ int_t elemsize = 0;
+                ^
+core/my_basic.c:7458:15: style: Variable 'pos' is assigned a value that is never used. [unreadVariable]
+ unsigned pos = 0;
+              ^
+core/my_basic.c:7459:15: style: Variable 'rawptr' is assigned a value that is never used. [unreadVariable]
+ void* rawptr = 0;
+              ^
+core/my_basic.c:7460:14: style: Variable 'ul' is assigned a value that is never used. [unreadVariable]
+ unsigned ul = 0;
+             ^
+core/my_basic.c:7864:18: style: Variable 'tmp' is assigned a value that is never used. [unreadVariable]
+ _ls_node_t* tmp = 0;
+                 ^
+core/my_basic.c:7865:8: style: Variable 'n' is assigned a value that is never used. [unreadVariable]
+ int n = 0;
+       ^
+core/my_basic.c:8303:10: style: Variable 'running' is assigned a value that is never used. [unreadVariable]
+ running = s->running_context;
+         ^
+core/my_basic.c:9092:17: style: Variable 'obj' is assigned a value that is never used. [unreadVariable]
+ _object_t* obj = (_object_t*)data;
+                ^
+core/my_basic.c:9216:35: style: Variable 'root_ref' is assigned a value that is never used. [unreadVariable]
+ _running_context_ref_t* root_ref = 0;
+                                  ^
+core/my_basic.c:9250:35: style: Variable 'root_ref' is assigned a value that is never used. [unreadVariable]
+ _running_context_ref_t* root_ref = 0;
+                                  ^
+core/my_basic.c:9329:19: style: Variable 'node' is assigned a value that is never used. [unreadVariable]
+ _ls_node_t* node = 0;
+                  ^
+core/my_basic.c:9330:17: style: Variable 'meta' is assigned a value that is never used. [unreadVariable]
+ _class_t* meta = 0;
+                ^
+core/my_basic.c:9615:17: style: Variable 'obj' is assigned a value that is never used. [unreadVariable]
+ _object_t* obj = 0;
+                ^
+core/my_basic.c:9637:17: style: Variable 'obj' is assigned a value that is never used. [unreadVariable]
+ _object_t* obj = 0;
+                ^
+core/my_basic.c:9660:17: style: Variable 'obj' is assigned a value that is never used. [unreadVariable]
+ _object_t* obj = 0;
+                ^
+core/my_basic.c:10770:27: style: Variable 'prev' is assigned a value that is never used. [unreadVariable]
+ _running_context_t* prev = 0;
+                          ^
+core/my_basic.c:10796:27: style: Variable 'prev' is assigned a value that is never used. [unreadVariable]
+ _running_context_t* prev = 0;
+                          ^
+core/my_basic.c:11003:17: style: Variable 'obj' is assigned a value that is never used. [unreadVariable]
+ _object_t* obj = 0;
+                ^
+core/my_basic.c:11026:17: style: Variable 'obj' is assigned a value that is never used. [unreadVariable]
+ _object_t* obj = 0;
+                ^
+core/my_basic.c:11972:19: style: Variable 'tmp' is assigned a value that is never used. [unreadVariable]
+  _ls_node_t* tmp = 0;
+                  ^
+core/my_basic.c:12006:23: style: Variable 'mp' is assigned a value that is never used. [unreadVariable]
+   _module_func_t* mp = 0;
+                      ^
+core/my_basic.c:12363:27: style: Variable 'global_scope' is assigned a value that is never used. [unreadVariable]
+ _ht_node_t* global_scope = 0;
+                          ^
+core/my_basic.c:15490:3: style: Variable 'ret.type' is assigned a value that is never used. [unreadVariable]
+  mb_make_bool(ret, true);
+  ^
+core/my_basic.c:15494:3: style: Variable 'ret.type' is assigned a value that is never used. [unreadVariable]
+  mb_make_bool(ret, !arg.value.integer);
+  ^
+core/my_basic.c:15498:3: style: Variable 'ret.type' is assigned a value that is never used. [unreadVariable]
+  mb_make_bool(ret, arg.value.float_point == (real_t)0);
+  ^
+core/my_basic.c:15502:3: style: Variable 'ret.type' is assigned a value that is never used. [unreadVariable]
+  mb_make_bool(ret, false);
+  ^
+core/my_basic.c:16658:8: style: Variable 'obj' is assigned a value that is never used. [unreadVariable]
+   obj = (_object_t*)ast->data;
+       ^
+core/my_basic.c:17133:8: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+ int i = 0;
+       ^
+core/my_basic.c:18599:7: style: Variable 'len' is assigned a value that is never used. [unreadVariable]
+  len = (size_t)_get_inputer(s)(s, pmt, line, sizeof(line));
+      ^
+shell/main.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 44 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+shell/main.c:1318:9: style: Obsolete function 'asctime' called. It is recommended to use 'strftime' instead. [asctimeCalled]
+  arg = asctime(timeinfo);
+        ^
+shell/main.c:216:27: style: Condition 'POOL_THRESHOLD_COUNT>0' is always false [knownConditionTrueFalse]
+  if(POOL_THRESHOLD_COUNT > 0 && in_pool_count < POOL_THRESHOLD_COUNT)
+                          ^
+shell/main.c:1140:5: style: Condition 'a' is always true [knownConditionTrueFalse]
+ if(a) {
+    ^
+shell/main.c:1121:13: note: Assignment 'a=1', assigned value is 1
+ bool_t a = true;
+            ^
+shell/main.c:1126:5: note: Assuming condition is false
+ if(!p) {
+    ^
+shell/main.c:1140:5: note: Condition 'a' is always true
+ if(a) {
+    ^
+shell/main.c:1153:5: style: Condition 'a' is always true [knownConditionTrueFalse]
+ if(a)
+    ^
+shell/main.c:1121:13: note: Assignment 'a=1', assigned value is 1
+ bool_t a = true;
+            ^
+shell/main.c:1126:5: note: Assuming condition is false
+ if(!p) {
+    ^
+shell/main.c:1153:5: note: Condition 'a' is always true
+ if(a)
+    ^
+shell/main.c:688:15: warning: Either the condition '!ch' is redundant or there is possible null pointer dereference: ch. [nullPointerRedundantCheck]
+ if(!ch && !(*ch))
+              ^
+shell/main.c:688:5: note: Assuming that condition '!ch' is not redundant
+ if(!ch && !(*ch))
+    ^
+shell/main.c:688:15: note: Null pointer dereference
+ if(!ch && !(*ch))
+              ^
+shell/main.c:213:8: style: The scope of the variable 's' can be reduced. [variableScope]
+ char* s = 0;
+       ^
+shell/main.c:243:9: style: The scope of the variable 's' can be reduced. [variableScope]
+ size_t s = 0;
+        ^
+shell/main.c:301:8: style: The scope of the variable 's' can be reduced. [variableScope]
+ char* s = 0;
+       ^
+shell/main.c:319:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i = 0;
+     ^
+shell/main.c:525:7: style: The scope of the variable 'curpos' can be reduced. [variableScope]
+ long curpos = 0;
+      ^
+shell/main.c:526:7: style: The scope of the variable 'l' can be reduced. [variableScope]
+ long l = 0;
+      ^
+shell/main.c:1118:7: style: The scope of the variable 'pr' can be reduced. [variableScope]
+ char pr[8];
+      ^
+shell/main.c:1299:7: style: The scope of the variable 'buf' can be reduced. [variableScope]
+ char buf[80];
+      ^
+shell/main.c:373:3: warning: Conversion of string literal "Multiple free." to bool always evaluates to true. [incorrectStringBooleanError]
+  mb_assert(0 && "Multiple free.");
+  ^
+shell/main.c:1570:43: warning: Conversion of string literal "Memory leak." to bool always evaluates to true. [incorrectStringBooleanError]
+ if(alloc_count > 0 || alloc_bytes > 0) { mb_assert(0 && "Memory leak."); }
+                                          ^
+shell/main.c:213:10: style: Variable 's' is assigned a value that is never used. [unreadVariable]
+ char* s = 0;
+         ^
+shell/main.c:242:8: style: Variable 'j' is assigned a value that is never used. [unreadVariable]
+ int j = 0;
+       ^
+shell/main.c:243:11: style: Variable 's' is assigned a value that is never used. [unreadVariable]
+ size_t s = 0;
+          ^
+shell/main.c:301:10: style: Variable 's' is assigned a value that is never used. [unreadVariable]
+ char* s = 0;
+         ^
+shell/main.c:319:8: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+ int i = 0;
+       ^
+shell/main.c:320:14: style: Variable 'pl' is assigned a value that is never used. [unreadVariable]
+ _pool_t* pl = 0;
+             ^
+shell/main.c:369:8: style: Variable 'i' is assigned a value that is never used. [unreadVariable]
+ int i = 0;
+       ^
+shell/main.c:370:14: style: Variable 'pl' is assigned a value that is never used. [unreadVariable]
+ _pool_t* pl = 0;
+             ^
+shell/main.c:525:14: style: Variable 'curpos' is assigned a value that is never used. [unreadVariable]
+ long curpos = 0;
+             ^
+shell/main.c:526:9: style: Variable 'l' is assigned a value that is never used. [unreadVariable]
+ long l = 0;
+        ^
+shell/main.c:800:10: style: Variable 'p' is assigned a value that is never used. [unreadVariable]
+ char* p = 0;
+         ^
+shell/main.c:1255:17: style: Local variable 'now' shadows outer function [shadowFunction]
+ struct timeval now;
+                ^
+shell/main.c:1295:12: note: Shadowed declaration
+static int now(struct mb_interpreter_t* s, void** l) {
+           ^
+shell/main.c:1255:17: note: Shadow variable
+ struct timeval now;
+                ^
+core/my_basic.c:8433:14: warning: Null pointer dereference: derived [ctunullpointer]
+ if(_ls_find(derived->meta_list, base, (_ls_compare_t)_ht_cmp_intptr, 0)) {
+             ^
+core/my_basic.c:8538:2: note: Assuming that condition 'n' is not redundant
+
+ ^
+core/my_basic.c:8535:23: note: Assignment 'instance=(struct _class_t*)n', assigned value is 0
+
+                      ^
+core/my_basic.c:8540:18: note: Calling function _link_meta_class, 2nd argument is null
+ _link_meta_class(instance->ref.s, instance, meta);
+                 ^
+core/my_basic.c:8433:14: note: Dereferencing argument derived that is null
+ if(_ls_find(derived->meta_list, base, (_ls_compare_t)_ht_cmp_intptr, 0)) {
+             ^
+core/my_basic.c:4912:0: style: The function '_standard_printer' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13341:0: style: The function 'mb_add_var' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13117:0: style: The function 'mb_begin_class' is never used. [unusedFunction]
+
+^
+core/my_basic.c:12584:0: style: The function 'mb_begin_module' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13828:0: style: The function 'mb_count_coll' is never used. [unusedFunction]
+
+^
+core/my_basic.c:14661:0: style: The function 'mb_debug_count_stack_frames' is never used. [unusedFunction]
+
+^
+core/my_basic.c:14598:0: style: The function 'mb_debug_get' is never used. [unusedFunction]
+
+^
+core/my_basic.c:14633:0: style: The function 'mb_debug_set' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13199:0: style: The function 'mb_end_class' is never used. [unusedFunction]
+
+^
+core/my_basic.c:12608:0: style: The function 'mb_end_module' is never used. [unusedFunction]
+
+^
+core/my_basic.c:14290:0: style: The function 'mb_eval_routine' is never used. [unusedFunction]
+
+^
+core/my_basic.c:12440:0: style: The function 'mb_fork' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13573:0: style: The function 'mb_get_array_elem' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13554:0: style: The function 'mb_get_array_len' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13224:0: style: The function 'mb_get_class_userdata' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13670:0: style: The function 'mb_get_coll' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13960:0: style: The function 'mb_get_ref_value' is never used. [unusedFunction]
+
+^
+core/my_basic.c:14208:0: style: The function 'mb_get_routine' is never used. [unusedFunction]
+
+^
+core/my_basic.c:14325:0: style: The function 'mb_get_routine_type' is never used. [unusedFunction]
+
+^
+core/my_basic.c:14940:0: style: The function 'mb_get_userdata' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13286:0: style: The function 'mb_get_value_by_name' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13422:0: style: The function 'mb_get_var_name' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13448:0: style: The function 'mb_get_var_value' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13311:0: style: The function 'mb_get_vars' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13495:0: style: The function 'mb_init_array' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13635:0: style: The function 'mb_init_coll' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13874:0: style: The function 'mb_keys_of_coll' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13926:0: style: The function 'mb_make_ref_value' is never used. [unusedFunction]
+
+^
+core/my_basic.c:14115:0: style: The function 'mb_override_value' is never used. [unusedFunction]
+
+^
+core/my_basic.c:12834:0: style: The function 'mb_pop_real' is never used. [unusedFunction]
+
+^
+core/my_basic.c:12912:0: style: The function 'mb_pop_usertype' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13074:0: style: The function 'mb_push_usertype' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13778:0: style: The function 'mb_remove_coll' is never used. [unusedFunction]
+
+^
+core/my_basic.c:12570:0: style: The function 'mb_remove_func' is never used. [unusedFunction]
+
+^
+core/my_basic.c:12577:0: style: The function 'mb_remove_reserved_func' is never used. [unusedFunction]
+
+^
+core/my_basic.c:14580:0: style: The function 'mb_schedule_suspend' is never used. [unusedFunction]
+
+^
+core/my_basic.c:14071:0: style: The function 'mb_set_alive_checker' is never used. [unusedFunction]
+
+^
+core/my_basic.c:14083:0: style: The function 'mb_set_alive_checker_of_value' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13605:0: style: The function 'mb_set_array_elem' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13258:0: style: The function 'mb_set_class_userdata' is never used. [unusedFunction]
+
+^
+core/my_basic.c:13722:0: style: The function 'mb_set_coll' is never used. [unusedFunction]
+
+^
+core/my_basic.c:14868:0: style: The function 'mb_set_inputer' is never used. [unusedFunction]
+
+^
+core/my_basic.c:14852:0: style: The function 'mb_set_printer' is never used. [unusedFunction]
+
+^
+core/my_basic.c:14238:0: style: The function 'mb_set_routine' is never used. [unusedFunction]
+
+^
+core/my_basic.c:14957:0: style: The function 'mb_set_userdata' is never used. [unusedFunction]
+
+^
+core/my_basic.c:12140:0: style: The function 'mb_ver' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+
